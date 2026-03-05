@@ -8,16 +8,16 @@ source:
   full: true
 
 selection:
-  targetCount: 24
+  targetCount: 30
   minimumCount: 20
   minimumRecommendedCount: 8
   fallbackContextLength: 8192
   popularityScore:
     likesWeight: 250
   bucketTargets:
-    small: 8
-    medium: 8
-    large: 8
+    small: 12
+    medium: 9
+    large: 9
 
 filters:
   trustedAuthors:
