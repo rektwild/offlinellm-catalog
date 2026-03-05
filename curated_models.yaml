@@ -60,6 +60,27 @@ models:
   fileName: Llama-3.2-3B-Instruct-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: 6c1a2b41161032677be168d354123594c0e6e67d2b9227c84f296ad037c728ff
+- id: microsoft-phi-3-5-mini-instruct-q4-k-m
+  name: Phi 3.5 mini instruct
+  family: phi3
+  group: recommended
+  tags:
+  - phi3
+  - mobile
+  - instruct
+  - long-context
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~2.2 GB) with 131072 context
+    length.
+  contextLength: 131072
+  hfRepo: MaziyarPanahi/Phi-3.5-mini-instruct-GGUF
+  fileName: Phi-3.5-mini-instruct.Q4_K_M.gguf
+  quantization: Q4_K_M
+  sha256: 3f68916e850b107d8641d18bcd5548f0d66beef9e0a9077fe84ef28943eb7e88
 - id: qwen-qwen2-5-3b-instruct-q4-k-m
   name: Qwen2.5 3B Instruct
   family: qwen
@@ -159,6 +180,65 @@ models:
   fileName: Qwen3-1.7B-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: b139949c5bd74937ad8ed8c8cf3d9ffb1e99c866c823204dc42c0d91fa181897
+- id: google-gemma-3-1b-it-q4-k-m
+  name: gemma 3 1b it
+  family: gemma
+  group: recommended
+  tags:
+  - gemma
+  - mobile
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~0.8 GB) with 32768 context
+    length.
+  contextLength: 32768
+  hfRepo: unsloth/gemma-3-1b-it-GGUF
+  fileName: gemma-3-1b-it-Q4_K_M.gguf
+  quantization: Q4_K_M
+  sha256: 8270790f3ab69fdfe860b7b64008d9a19986d8df7e407bb018184caa08798ebd
+- id: deepseek-ai-deepseek-r1-distill-qwen-1-5b-q4-k-m
+  name: DeepSeek R1 Distill Qwen 1.5B
+  family: qwen
+  group: recommended
+  tags:
+  - qwen
+  - mobile
+  - long-context
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~1.0 GB) with 131072 context
+    length.
+  contextLength: 131072
+  hfRepo: unsloth/DeepSeek-R1-Distill-Qwen-1.5B-GGUF
+  fileName: DeepSeek-R1-Distill-Qwen-1.5B-Q4_K_M.gguf
+  quantization: Q4_K_M
+  sha256: f3bdf9cf31dee4b57ae4e455a1cb0d01b5c2c1b50d72d3112141c195506c2840
+- id: liquidai-lfm2-2-6b-q4-k-m
+  name: LFM2 2.6B
+  family: general
+  group: recommended
+  tags:
+  - general
+  - mobile
+  - long-context
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~1.6 GB) with 128000 context
+    length.
+  contextLength: 128000
+  hfRepo: LiquidAI/LFM2-2.6B-GGUF
+  fileName: LFM2-2.6B-Q4_K_M-hip-optimized.gguf
+  quantization: Q4_K_M
+  sha256: bb72b115a4ae7a3c6e23da4f18c39f46817288ae1a6e08277d440864c4c3276b
 - id: meta-llama-meta-llama-3-1-8b-instruct-q4-k-m
   name: Meta Llama 3.1 8B Instruct
   family: llama3
@@ -198,6 +278,25 @@ models:
   fileName: DeepSeek-R1-0528-Qwen3-8B-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: a86349a4180c4e6bb43f874c29c404fa2be3f90b15509bd6d86f697dba724ec1
+- id: mistralai-mistral-7b-instruct-v0-3-q4-k-m
+  name: Mistral 7B Instruct v0.3
+  family: mistral
+  group: advanced
+  tags:
+  - mistral
+  - balanced
+  - instruct
+  minRamGb: 6
+  devices:
+  - ipad
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~4.1 GB) with 32768 context
+    length.
+  contextLength: 32768
+  hfRepo: MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF
+  fileName: Mistral-7B-Instruct-v0.3.Q4_K_M.gguf
+  quantization: Q4_K_M
+  sha256: 14850c84ff9f06e9b51d505d64815d5cc0cea0257380353ac0b3d21b21f6e024
 - id: qwen-qwen2-5-coder-7b-instruct-q4-k-m
   name: Qwen2.5 Coder 7B Instruct
   family: qwen
@@ -457,3 +556,23 @@ models:
   fileName: Qwen2.5-32B-Instruct-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: 2e5f6daea180dbc59f65a40641e94d3973b5dbaa32b3c0acf54647fa874e519e
+- id: qwen-qwen2-5-coder-14b-instruct-q4-k-m
+  name: Qwen2.5 Coder 14B Instruct
+  family: qwen
+  group: advanced
+  tags:
+  - qwen
+  - powerful
+  - coding
+  - instruct
+  - long-context
+  minRamGb: 12
+  devices:
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~8.4 GB) with 131072 context
+    length.
+  contextLength: 131072
+  hfRepo: Qwen/Qwen2.5-Coder-14B-Instruct-GGUF
+  fileName: qwen2.5-coder-14b-instruct-q4_k_m.gguf
+  quantization: Q4_K_M
+  sha256: c1e659736d89ac1065fb495330fb824d94001974a4bfa78e7270e43476a8d940
