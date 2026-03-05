@@ -1,42 +1,150 @@
 {
-  "version": 1,
+  "version": 2,
   "updatedAt": "2026-03-04",
   "models": [
     {
-      "id": "llama-3-8b-instruct-q4",
-      "name": "Llama 3 8B",
-      "family": "llama3",
+      "id": "deepseek-ai-deepseek-r1-0528-qwen3-8b-q4-k-m",
+      "name": "DeepSeek R1 0528 Qwen3 8B",
+      "family": "qwen",
       "quantization": "Q4_K_M",
-      "sizeBytes": 4920734272,
-      "contextLength": 8192,
-      "downloadURL": "https://huggingface.co/bartowski/Meta-Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct-Q4_K_M.gguf",
-      "sha256": null,
+      "sizeBytes": 5027785216,
+      "contextLength": 131072,
+      "downloadURL": "https://huggingface.co/unsloth/DeepSeek-R1-0528-Qwen3-8B-GGUF/resolve/main/DeepSeek-R1-0528-Qwen3-8B-Q4_K_M.gguf",
+      "sha256": "a86349a4180c4e6bb43f874c29c404fa2be3f90b15509bd6d86f697dba724ec1",
       "group": "advanced",
       "tags": [
-        "powerful",
-        "versatile",
-        "meta"
+        "qwen",
+        "balanced",
+        "long-context"
       ],
       "minRamGb": 8,
       "devices": [
         "ipad",
         "mac"
       ],
-      "description": "Meta's flagship 8B model. Highly capable across all tasks. Requires 8GB+ RAM."
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~4.7 GB) with 131072 context length."
     },
     {
-      "id": "llama-3.2-3b-instruct-q4",
-      "name": "Llama 3.2 3B",
+      "id": "deepseek-ai-deepseek-r1-distill-llama-8b-q4-k-m",
+      "name": "DeepSeek R1 Distill Llama 8B",
       "family": "llama3",
       "quantization": "Q4_K_M",
-      "sizeBytes": 2019377696,
+      "sizeBytes": 4920737216,
       "contextLength": 131072,
-      "downloadURL": "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_K_M.gguf",
-      "sha256": null,
+      "downloadURL": "https://huggingface.co/unsloth/DeepSeek-R1-Distill-Llama-8B-GGUF/resolve/main/DeepSeek-R1-Distill-Llama-8B-Q4_K_M.gguf",
+      "sha256": "0addb1339a82385bcd973186cd80d18dcc71885d45eabd899781a118d03827d9",
+      "group": "advanced",
+      "tags": [
+        "llama3",
+        "balanced",
+        "long-context"
+      ],
+      "minRamGb": 8,
+      "devices": [
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~4.6 GB) with 131072 context length."
+    },
+    {
+      "id": "deepseek-ai-deepseek-r1-distill-qwen-14b-q4-k-m",
+      "name": "DeepSeek R1 Distill Qwen 14B",
+      "family": "qwen",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 8988110240,
+      "contextLength": 131072,
+      "downloadURL": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-14B-GGUF/resolve/main/DeepSeek-R1-Distill-Qwen-14B-Q4_K_M.gguf",
+      "sha256": "0b319bd0572f2730bfe11cc751defe82045fad5085b4e60591ac2cd2d9633181",
+      "group": "advanced",
+      "tags": [
+        "qwen",
+        "powerful",
+        "long-context"
+      ],
+      "minRamGb": 12,
+      "devices": [
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~8.4 GB) with 131072 context length."
+    },
+    {
+      "id": "deepseek-ai-deepseek-r1-distill-qwen-32b-q4-k-m",
+      "name": "DeepSeek R1 Distill Qwen 32B",
+      "family": "qwen",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 19851335840,
+      "contextLength": 131072,
+      "downloadURL": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-32B-GGUF/resolve/main/DeepSeek-R1-Distill-Qwen-32B-Q4_K_M.gguf",
+      "sha256": "bed9b0f551f5b95bf9da5888a48f0f87c37ad6b72519c4cbd775f54ac0b9fc62",
+      "group": "advanced",
+      "tags": [
+        "qwen",
+        "powerful",
+        "long-context"
+      ],
+      "minRamGb": 16,
+      "devices": [
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~18.5 GB) with 131072 context length."
+    },
+    {
+      "id": "google-gemma-2-2b-it-q4-k-m",
+      "name": "gemma 2 2b it",
+      "family": "gemma",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 1708582752,
+      "contextLength": 8192,
+      "downloadURL": "https://huggingface.co/bartowski/gemma-2-2b-it-GGUF/resolve/main/gemma-2-2b-it-Q4_K_M.gguf",
+      "sha256": "e0aee85060f168f0f2d8473d7ea41ce2f3230c1bc1374847505ea599288a7787",
       "group": "recommended",
       "tags": [
-        "balanced",
-        "multilingual",
+        "gemma",
+        "mobile"
+      ],
+      "minRamGb": 4,
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~1.6 GB) with 8192 context length."
+    },
+    {
+      "id": "google-gemma-2-9b-it-q4-k-m",
+      "name": "gemma 2 9b it",
+      "family": "gemma",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 6843425696,
+      "contextLength": 8192,
+      "downloadURL": "https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q4_K_M-fp16.gguf",
+      "sha256": "0452e54ba9b6c5b2e466fbd7f28c089fefb7c3dceddcc2b75becab6b16cae523",
+      "group": "advanced",
+      "tags": [
+        "gemma",
+        "balanced"
+      ],
+      "minRamGb": 8,
+      "devices": [
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~6.4 GB) with 8192 context length."
+    },
+    {
+      "id": "menlo-jan-v3-4b-base-instruct-q4-k-m",
+      "name": "Jan v3 4B base instruct",
+      "family": "general",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 2716066752,
+      "contextLength": 262144,
+      "downloadURL": "https://huggingface.co/janhq/Jan-v3-4B-base-instruct-gguf/resolve/main/Jan-v3-4b-base-instruct-Q4_K_M.gguf",
+      "sha256": "60b7a5dc9e3f7430659b12872a8807cfce8a6114d6aa32e2355157c4db1847aa",
+      "group": "recommended",
+      "tags": [
+        "general",
+        "mobile",
+        "instruct",
         "long-context"
       ],
       "minRamGb": 4,
@@ -45,44 +153,23 @@
         "ipad",
         "mac"
       ],
-      "description": "Balanced performance with very long context. Good for research, summaries, and conversations."
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~2.5 GB) with 262144 context length."
     },
     {
-      "id": "mistral-7b-instruct-v0.3-q4",
-      "name": "Mistral 7B v0.3",
-      "family": "mistral",
+      "id": "meta-llama-llama-3-2-1b-instruct-q4-k-m",
+      "name": "Llama 3.2 1B Instruct",
+      "family": "llama3",
       "quantization": "Q4_K_M",
-      "sizeBytes": 4372812000,
-      "contextLength": 32768,
-      "downloadURL": "https://huggingface.co/bartowski/Mistral-7B-Instruct-v0.3-GGUF/resolve/main/Mistral-7B-Instruct-v0.3-Q4_K_M.gguf",
-      "sha256": null,
-      "group": "advanced",
-      "tags": [
-        "powerful",
-        "coding",
-        "reasoning"
-      ],
-      "minRamGb": 6,
-      "devices": [
-        "ipad",
-        "mac"
-      ],
-      "description": "Powerful 7B model. Excellent for coding, analysis, and complex reasoning. Requires 6GB+ RAM."
-    },
-    {
-      "id": "phi-3-mini-4k-instruct-q4",
-      "name": "Phi-3 Mini 4K",
-      "family": "phi3",
-      "quantization": "Q4",
-      "sizeBytes": 2393231072,
-      "contextLength": 4096,
-      "downloadURL": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/resolve/main/Phi-3-mini-4k-instruct-q4.gguf",
-      "sha256": null,
+      "sizeBytes": 807694464,
+      "contextLength": 131072,
+      "downloadURL": "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q4_K_M.gguf",
+      "sha256": "6f85a640a97cf2bf5b8e764087b1e83da0fdb51d7c9fab7d0fece9385611df83",
       "group": "recommended",
       "tags": [
-        "fast",
-        "small",
-        "versatile"
+        "llama3",
+        "mobile",
+        "instruct",
+        "long-context"
       ],
       "minRamGb": 4,
       "devices": [
@@ -90,7 +177,360 @@
         "ipad",
         "mac"
       ],
-      "description": "Compact and fast. Great for everyday questions, writing, and coding. Works on all devices."
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~0.8 GB) with 131072 context length."
+    },
+    {
+      "id": "meta-llama-llama-3-2-3b-instruct-q4-k-m",
+      "name": "Llama 3.2 3B Instruct",
+      "family": "llama3",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 2019377696,
+      "contextLength": 131072,
+      "downloadURL": "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+      "sha256": "6c1a2b41161032677be168d354123594c0e6e67d2b9227c84f296ad037c728ff",
+      "group": "recommended",
+      "tags": [
+        "llama3",
+        "mobile",
+        "instruct",
+        "long-context"
+      ],
+      "minRamGb": 4,
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~1.9 GB) with 131072 context length."
+    },
+    {
+      "id": "meta-llama-meta-llama-3-1-8b-instruct-q4-k-m",
+      "name": "Meta Llama 3.1 8B Instruct",
+      "family": "llama3",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 4920739232,
+      "contextLength": 131072,
+      "downloadURL": "https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF/resolve/main/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
+      "sha256": "7b064f5842bf9532c91456deda288a1b672397a54fa729aa665952863033557c",
+      "group": "advanced",
+      "tags": [
+        "llama3",
+        "balanced",
+        "instruct",
+        "long-context"
+      ],
+      "minRamGb": 8,
+      "devices": [
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~4.6 GB) with 131072 context length."
+    },
+    {
+      "id": "microsoft-phi-4-gguf-q4-k-s",
+      "name": "phi 4 gguf",
+      "family": "phi3",
+      "quantization": "Q4_K_S",
+      "sizeBytes": 8440762560,
+      "contextLength": 16384,
+      "downloadURL": "https://huggingface.co/microsoft/phi-4-gguf/resolve/main/phi-4-Q4_K_S.gguf",
+      "sha256": "8a8189132ef70cd737e136d38b706e8cb832f9cdf3c744547694769e9313550e",
+      "group": "advanced",
+      "tags": [
+        "phi3",
+        "balanced"
+      ],
+      "minRamGb": 8,
+      "devices": [
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_S GGUF (~7.9 GB) with 16384 context length."
+    },
+    {
+      "id": "openai-gpt-oss-20b-q4-k-m",
+      "name": "gpt oss 20b",
+      "family": "gpt-oss",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 11624759488,
+      "contextLength": 131072,
+      "downloadURL": "https://huggingface.co/unsloth/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q4_K_M.gguf",
+      "sha256": "c27536640e410032865dc68781d80a08b98f8db5e93575919af8ccc0568aeb4f",
+      "group": "advanced",
+      "tags": [
+        "gpt-oss",
+        "powerful",
+        "long-context"
+      ],
+      "minRamGb": 12,
+      "devices": [
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~10.8 GB) with 131072 context length."
+    },
+    {
+      "id": "qwen-qwen2-5-1-5b-instruct-q4-k-m",
+      "name": "Qwen2.5 1.5B Instruct",
+      "family": "qwen",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 1117320736,
+      "contextLength": 8192,
+      "downloadURL": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/main/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+      "group": "recommended",
+      "tags": [
+        "qwen",
+        "mobile",
+        "instruct"
+      ],
+      "minRamGb": 4,
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~1.0 GB) with 8192 context length."
+    },
+    {
+      "id": "qwen-qwen2-5-32b-instruct-q4-k-m",
+      "name": "Qwen2.5 32B Instruct",
+      "family": "qwen",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 19851336576,
+      "contextLength": 32768,
+      "downloadURL": "https://huggingface.co/bartowski/Qwen2.5-32B-Instruct-GGUF/resolve/main/Qwen2.5-32B-Instruct-Q4_K_M.gguf",
+      "sha256": "2e5f6daea180dbc59f65a40641e94d3973b5dbaa32b3c0acf54647fa874e519e",
+      "group": "advanced",
+      "tags": [
+        "qwen",
+        "powerful",
+        "instruct"
+      ],
+      "minRamGb": 16,
+      "devices": [
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~18.5 GB) with 32768 context length."
+    },
+    {
+      "id": "qwen-qwen2-5-3b-instruct-q4-k-m",
+      "name": "Qwen2.5 3B Instruct",
+      "family": "qwen",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 2104932768,
+      "contextLength": 32768,
+      "downloadURL": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF/resolve/main/qwen2.5-3b-instruct-q4_k_m.gguf",
+      "sha256": "626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+      "group": "recommended",
+      "tags": [
+        "qwen",
+        "mobile",
+        "instruct"
+      ],
+      "minRamGb": 4,
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~2.0 GB) with 32768 context length."
+    },
+    {
+      "id": "qwen-qwen2-5-7b-instruct-q4-k-m",
+      "name": "Qwen2.5 7B Instruct",
+      "family": "qwen",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 4683074240,
+      "contextLength": 32768,
+      "downloadURL": "https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF/resolve/main/Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+      "sha256": "65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423",
+      "group": "advanced",
+      "tags": [
+        "qwen",
+        "balanced",
+        "instruct"
+      ],
+      "minRamGb": 6,
+      "devices": [
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~4.4 GB) with 32768 context length."
+    },
+    {
+      "id": "qwen-qwen2-5-coder-32b-instruct-q4-k-m",
+      "name": "Qwen2.5 Coder 32B Instruct",
+      "family": "qwen",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 19851335872,
+      "contextLength": 131072,
+      "downloadURL": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct-GGUF/resolve/main/qwen2.5-coder-32b-instruct-q4_k_m.gguf",
+      "sha256": "4d64b316b5e6319d9613e0d97935d9ebd631fc7e334da400d00085eca749d085",
+      "group": "advanced",
+      "tags": [
+        "qwen",
+        "powerful",
+        "coding",
+        "instruct",
+        "long-context"
+      ],
+      "minRamGb": 16,
+      "devices": [
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~18.5 GB) with 131072 context length."
+    },
+    {
+      "id": "qwen-qwen2-5-coder-7b-instruct-q4-k-m",
+      "name": "Qwen2.5 Coder 7B Instruct",
+      "family": "qwen",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 4683073536,
+      "contextLength": 131072,
+      "downloadURL": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF/resolve/main/qwen2.5-coder-7b-instruct-q4_k_m.gguf",
+      "sha256": "509287f78cb4d4cf6b3843734733b914b2c158e43e22a7f4bf5e963800894d3c",
+      "group": "advanced",
+      "tags": [
+        "qwen",
+        "balanced",
+        "coding",
+        "instruct",
+        "long-context"
+      ],
+      "minRamGb": 6,
+      "devices": [
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~4.4 GB) with 131072 context length."
+    },
+    {
+      "id": "qwen-qwen3-1-7b-q4-k-m",
+      "name": "Qwen3 1.7B",
+      "family": "qwen",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 1107409472,
+      "contextLength": 40960,
+      "downloadURL": "https://huggingface.co/unsloth/Qwen3-1.7B-GGUF/resolve/main/Qwen3-1.7B-Q4_K_M.gguf",
+      "sha256": "b139949c5bd74937ad8ed8c8cf3d9ffb1e99c866c823204dc42c0d91fa181897",
+      "group": "recommended",
+      "tags": [
+        "qwen",
+        "mobile"
+      ],
+      "minRamGb": 4,
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~1.0 GB) with 40960 context length."
+    },
+    {
+      "id": "qwen-qwen3-14b-q4-k-m",
+      "name": "Qwen3 14B",
+      "family": "qwen",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 9001752960,
+      "contextLength": 40960,
+      "downloadURL": "https://huggingface.co/Qwen/Qwen3-14B-GGUF/resolve/main/Qwen3-14B-Q4_K_M.gguf",
+      "sha256": "500a8806e85ee9c83f3ae08420295592451379b4f8cf2d0f41c15dffeb6b81f0",
+      "group": "advanced",
+      "tags": [
+        "qwen",
+        "powerful"
+      ],
+      "minRamGb": 12,
+      "devices": [
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~8.4 GB) with 40960 context length."
+    },
+    {
+      "id": "qwen-qwen3-30b-a3b-q4-k-m",
+      "name": "Qwen3 30B A3B",
+      "family": "qwen",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 18556686912,
+      "contextLength": 40960,
+      "downloadURL": "https://huggingface.co/unsloth/Qwen3-30B-A3B-GGUF/resolve/main/Qwen3-30B-A3B-Q4_K_M.gguf",
+      "sha256": "9f1a24700a339b09c06009b729b5c809e0b64c213b8af5b711b3dbdfd0c5ba48",
+      "group": "advanced",
+      "tags": [
+        "qwen",
+        "powerful"
+      ],
+      "minRamGb": 16,
+      "devices": [
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~17.3 GB) with 40960 context length."
+    },
+    {
+      "id": "qwen-qwen3-4b-q4-k-m",
+      "name": "Qwen3 4B",
+      "family": "qwen",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 2497281312,
+      "contextLength": 40960,
+      "downloadURL": "https://huggingface.co/unsloth/Qwen3-4B-GGUF/resolve/main/Qwen3-4B-Q4_K_M.gguf",
+      "sha256": "f6f851777709861056efcdad3af01da38b31223a3ba26e61a4f8bf3a2195813a",
+      "group": "recommended",
+      "tags": [
+        "qwen",
+        "mobile"
+      ],
+      "minRamGb": 4,
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~2.3 GB) with 40960 context length."
+    },
+    {
+      "id": "qwen-qwen3-8b-q4-k-m",
+      "name": "Qwen3 8B",
+      "family": "qwen",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 5027783488,
+      "contextLength": 40960,
+      "downloadURL": "https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/main/Qwen3-8B-Q4_K_M.gguf",
+      "sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+      "group": "advanced",
+      "tags": [
+        "qwen",
+        "balanced"
+      ],
+      "minRamGb": 8,
+      "devices": [
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~4.7 GB) with 40960 context length."
+    },
+    {
+      "id": "qwen-qwen3-coder-30b-a3b-instruct-q4-k-m",
+      "name": "Qwen3 Coder 30B A3B Instruct",
+      "family": "qwen",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 18556689568,
+      "contextLength": 262144,
+      "downloadURL": "https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF/resolve/main/Qwen3-Coder-30B-A3B-Instruct-Q4_K_M.gguf",
+      "sha256": "fadc3e5f8d42bf7e894a785b05082e47daee4df26680389817e2093056f088ad",
+      "group": "advanced",
+      "tags": [
+        "qwen",
+        "powerful",
+        "coding",
+        "instruct",
+        "long-context"
+      ],
+      "minRamGb": 16,
+      "devices": [
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~17.3 GB) with 262144 context length."
     }
   ]
 }

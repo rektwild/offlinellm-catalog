@@ -30,6 +30,11 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Refresh curated models
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: python scripts/refresh_curated_models.py
+
       - name: Build catalog
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
@@ -42,13 +47,13 @@ jobs:
 
       - name: Commit and push catalog
         run: |
-          if git diff --quiet -- catalog.json; then
+          if git diff --quiet -- curated_models.yaml catalog.json; then
             echo "No catalog changes."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add catalog.json
-          git commit -m "chore: update catalog"
+          git add curated_models.yaml catalog.json
+          git commit -m "chore: refresh curated models and catalog"
           git push

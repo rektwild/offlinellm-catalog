@@ -35,6 +35,12 @@ REQUIRED_MODEL_FIELDS = [
     "description",
 ]
 
+ALLOWED_AUTO_QUANTIZATIONS = {"Q4_K_M", "Q4_K_S", "Q4_0"}
+MIN_SIZE_GB = 0.7
+MAX_SIZE_GB = 32.0
+MIN_MODEL_COUNT = 20
+MIN_RECOMMENDED_COUNT = 8
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Validate catalog.json")
@@ -159,6 +165,108 @@ def validate_urls(models: list[dict[str, Any]], token: str | None) -> list[str]:
     return errors
 
 
+def bytes_to_gb(size_bytes: int) -> float:
+    return size_bytes / 1_073_741_824
+
+
+def expected_constraints(size_gb: float) -> dict[str, Any] | None:
+    if MIN_SIZE_GB <= size_gb <= 3.5:
+        return {
+            "group": "recommended",
+            "devices": {"iphone", "ipad", "mac"},
+            "min_ram": 4,
+        }
+    if 3.5 < size_gb <= 8.0:
+        min_ram = 6 if size_gb <= 4.5 else 8
+        return {
+            "group": "advanced",
+            "devices": {"ipad", "mac"},
+            "min_ram": min_ram,
+        }
+    if 8.0 < size_gb <= 16.0:
+        return {
+            "group": "advanced",
+            "devices": {"mac"},
+            "min_ram": 12,
+        }
+    if 16.0 < size_gb <= MAX_SIZE_GB:
+        return {
+            "group": "advanced",
+            "devices": {"mac"},
+            "min_ram": 16,
+        }
+    return None
+
+
+def validate_semantics(models: list[dict[str, Any]]) -> list[str]:
+    errors: list[str] = []
+    recommended_count = 0
+
+    for model in models:
+        model_id = str(model.get("id", "unknown"))
+
+        size_bytes = model.get("sizeBytes")
+        if not isinstance(size_bytes, int) or size_bytes <= 0:
+            errors.append(f"Model '{model_id}' has invalid sizeBytes for semantic checks")
+            continue
+
+        size_gb = bytes_to_gb(size_bytes)
+        expected = expected_constraints(size_gb)
+        if expected is None:
+            errors.append(
+                f"Model '{model_id}' size {size_gb:.2f} GB is outside the allowed "
+                f"{MIN_SIZE_GB:.1f}-{MAX_SIZE_GB:.1f} GB range"
+            )
+            continue
+
+        quantization = model.get("quantization")
+        if not isinstance(quantization, str) or quantization not in ALLOWED_AUTO_QUANTIZATIONS:
+            errors.append(
+                f"Model '{model_id}' quantization '{quantization}' is not in allowed set "
+                f"{sorted(ALLOWED_AUTO_QUANTIZATIONS)}"
+            )
+
+        group = model.get("group")
+        if group != expected["group"]:
+            errors.append(
+                f"Model '{model_id}' group '{group}' does not match expected "
+                f"'{expected['group']}' for size {size_gb:.2f} GB"
+            )
+        if group == "recommended":
+            recommended_count += 1
+
+        min_ram = model.get("minRamGb")
+        if not isinstance(min_ram, int) or min_ram != expected["min_ram"]:
+            errors.append(
+                f"Model '{model_id}' minRamGb '{min_ram}' does not match expected "
+                f"'{expected['min_ram']}' for size {size_gb:.2f} GB"
+            )
+
+        devices = model.get("devices")
+        if not isinstance(devices, list) or not all(isinstance(item, str) for item in devices):
+            errors.append(f"Model '{model_id}' has invalid devices list")
+            continue
+
+        device_set = set(devices)
+        if device_set != expected["devices"]:
+            errors.append(
+                f"Model '{model_id}' devices {sorted(device_set)} do not match expected "
+                f"{sorted(expected['devices'])} for size {size_gb:.2f} GB"
+            )
+
+    if len(models) < MIN_MODEL_COUNT:
+        errors.append(
+            f"Catalog has only {len(models)} models; minimum required is {MIN_MODEL_COUNT}"
+        )
+    if recommended_count < MIN_RECOMMENDED_COUNT:
+        errors.append(
+            f"Catalog has only {recommended_count} recommended models; minimum required is "
+            f"{MIN_RECOMMENDED_COUNT}"
+        )
+
+    return errors
+
+
 def main() -> int:
     args = parse_args()
     token = os.getenv("HF_TOKEN")
@@ -181,6 +289,7 @@ def main() -> int:
     model_objects = [model for model in models if isinstance(model, dict)]
     errors.extend(validate_unique_ids(model_objects))
     errors.extend(validate_required_fields(model_objects))
+    errors.extend(validate_semantics(model_objects))
     errors.extend(validate_urls(model_objects, token))
 
     if errors:

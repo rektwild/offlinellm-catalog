@@ -1,0 +1,101 @@
+source:
+  endpoint: https://huggingface.co/api/models
+  search: gguf
+  filter: text-generation
+  sort: downloads
+  direction: -1
+  limit: 300
+  full: true
+
+selection:
+  targetCount: 24
+  minimumCount: 20
+  minimumRecommendedCount: 8
+  fallbackContextLength: 8192
+  popularityScore:
+    likesWeight: 250
+  bucketTargets:
+    small: 8
+    medium: 8
+    large: 8
+
+filters:
+  trustedAuthors:
+    - bartowski
+    - Qwen
+    - microsoft
+    - lmstudio-community
+    - hugging-quants
+    - unsloth
+    - LiquidAI
+    - janhq
+    - TheBloke
+  hardRejectFlags:
+    - private
+    - gated
+    - disabled
+  minDownloads: 10000
+  minLikes: 25
+  recencyFrom: "2024-01-01"
+  blocklistRepoSubstrings:
+    - uncensored
+    - nsfw
+    - roleplay
+    - personality
+    - erotic
+    - dolphin
+    - wizard
+    - heretic
+    - lexi
+    - dan
+    - storywriter
+  baseModelOwnerAllowlist:
+    - meta-llama
+    - mistralai
+    - microsoft
+    - qwen
+    - google
+    - deepseek-ai
+    - openai
+    - liquidai
+    - menlo
+  quantizationPriority:
+    - Q4_K_M
+    - Q4_K_S
+    - Q4_0
+  sizeGb:
+    min: 0.7
+    max: 32.0
+
+files:
+  rejectPathContains:
+    - mmproj
+  rejectPathRegex:
+    - "-\\d{5}-of-\\d{5}\\.gguf$"
+
+segmentation:
+  small:
+    maxSizeGb: 3.5
+    devices:
+      - iphone
+      - ipad
+      - mac
+    minRamGb: 4
+    group: recommended
+  medium:
+    maxSizeGb: 8.0
+    devices:
+      - ipad
+      - mac
+    lowRamThresholdGb: 4.5
+    minRamGbLow: 6
+    minRamGbHigh: 8
+    group: advanced
+  large:
+    maxSizeGb: 32.0
+    devices:
+      - mac
+    highRamThresholdGb: 16.0
+    minRamGbMid: 12
+    minRamGbHigh: 16
+    group: advanced
