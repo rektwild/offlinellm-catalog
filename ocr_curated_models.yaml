@@ -1,23 +1,147 @@
 models:
-  - id: llava-1.6-vicuna-7b-q4
-    name: LLaVA 1.6 Vicuna 7B
-    family: llava
-    quantization: Q4_K_M
-    sizeBytes: 4795000000
-    contextLength: 4096
-    downloadURL: https://huggingface.co/ggml-org/llava-v1.6-vicuna-7b-gguf/resolve/main/llava-v1.6-vicuna-7b-q4_k_m.gguf
-    sha256: "0000000000000000000000000000000000000000000000000000000000000000"
-    mmprojDownloadURL: https://huggingface.co/ggml-org/llava-v1.6-vicuna-7b-gguf/resolve/main/mmproj-model-f16.gguf
-    mmprojSizeBytes: 650000000
-    mmprojSha256: "1111111111111111111111111111111111111111111111111111111111111111"
-    group: advanced
-    tags:
-      - ocr
-      - multimodal
-      - vision
-    minRamGb: 8
-    devices:
-      - ipad
-      - mac
-    description: Multimodal OCR model package (main + mmproj).
-    promptTemplate: Extract all readable text from this image. Preserve line breaks and ordering.
+- id: mistralai-mistral-7b-v0-1-q4-0-ocr
+  name: Mistral 7B v0.1
+  family: llava
+  quantization: Q4_0
+  sizeBytes: 4108928000
+  contextLength: 32768
+  downloadURL: https://huggingface.co/billborkowski/llava-NousResearch_Nous-Hermes-2-Vision-GGUF/resolve/main/NousResearch_Nous-Hermes-2-Vision-GGUF_Q4_0.gguf
+  sha256: b3fa9f25cb31da1746288f8bf2e88ab110d28d6510e662efd9f4100c2ea83ba4
+  mmprojDownloadURL: https://huggingface.co/billborkowski/llava-NousResearch_Nous-Hermes-2-Vision-GGUF/resolve/main/mmproj-model-f16.gguf
+  mmprojSizeBytes: 839316352
+  mmprojSha256: 5c2a602b13c155db542d26fa5884e98e1ca4f2bb947e18957fc32c8f87492182
+  group: advanced
+  tags:
+  - ocr
+  - multimodal
+  - vision
+  - llava
+  minRamGb: 8
+  devices:
+  - ipad
+  - mac
+  description: Auto-curated OCR-capable VLM package (main + mmproj). Q4_0 GGUF (~3.83
+    GB).
+  promptTemplate: Extract all readable text from this image. Preserve line breaks
+    and ordering.
+- id: shadowbeast-llava-v1-6-mistral-7b-q5-k-s-gguf-q5-k-s-ocr
+  name: llava v1.6 mistral 7b Q5 K S GGUF
+  family: llava
+  quantization: Q5_K_S
+  sizeBytes: 4997716224
+  contextLength: 32768
+  downloadURL: https://huggingface.co/ShadowBeast/llava-v1.6-mistral-7b-Q5_K_S-GGUF/resolve/main/llava-v1.6-mistral-7b-Q5_K_S.gguf
+  sha256: ba230b2b8b2e12a15d5dc94df812ae0c5e5ba839d0c32463a170d1c442a9631e
+  mmprojDownloadURL: https://huggingface.co/ShadowBeast/llava-v1.6-mistral-7b-Q5_K_S-GGUF/resolve/main/mmproj-model-f16.gguf
+  mmprojSizeBytes: 624451168
+  mmprojSha256: b569399e8b652c0f1cd3e629faef3c608328f4e6af612f9574b9c52a573c3f7d
+  group: advanced
+  tags:
+  - ocr
+  - multimodal
+  - vision
+  - llava
+  minRamGb: 8
+  devices:
+  - ipad
+  - mac
+  description: Auto-curated OCR-capable VLM package (main + mmproj). Q5_K_S GGUF (~4.65
+    GB).
+  promptTemplate: Extract all readable text from this image. Preserve line breaks
+    and ordering.
+- id: cjpais-llava-1-6-mistral-7b-gguf-q8-0-ocr
+  name: llava 1.6 mistral 7b gguf
+  family: llava
+  quantization: Q8_0
+  sizeBytes: 7695857920
+  contextLength: 32768
+  downloadURL: https://huggingface.co/cjpais/llava-1.6-mistral-7b-gguf/resolve/main/llava-1.6-mistral-7b.Q8_0.gguf
+  sha256: 7b2df37a6412576839ada0ca61c3f53577044234571b532c67d28e57ba582682
+  mmprojDownloadURL: https://huggingface.co/cjpais/llava-1.6-mistral-7b-gguf/resolve/main/mmproj-model-f16.gguf
+  mmprojSizeBytes: 624451168
+  mmprojSha256: 00205ee8a0d7a381900cd031e43105f86aa0d8c07bf329851e85c71a26632d16
+  group: advanced
+  tags:
+  - ocr
+  - multimodal
+  - vision
+  - llava
+  minRamGb: 12
+  devices:
+  - mac
+  description: Auto-curated OCR-capable VLM package (main + mmproj). Q8_0 GGUF (~7.17
+    GB).
+  promptTemplate: Extract all readable text from this image. Preserve line breaks
+    and ordering.
+- id: xtuner-llava-phi-3-mini-gguf-f16-ocr
+  name: llava phi 3 mini gguf
+  family: llava
+  quantization: F16
+  sizeBytes: 7643301856
+  contextLength: 4096
+  downloadURL: https://huggingface.co/xtuner/llava-phi-3-mini-gguf/resolve/main/llava-phi-3-mini-f16.gguf
+  sha256: ff9c8f58905d414ae8a375f88cdd8d25649a85e4e44952def4977c50d1daf289
+  mmprojDownloadURL: https://huggingface.co/xtuner/llava-phi-3-mini-gguf/resolve/main/llava-phi-3-mini-mmproj-f16.gguf
+  mmprojSizeBytes: 607648960
+  mmprojSha256: 004fc09697203296f72321b296a8d48aade2d23e553cbfb1c1e6a0b5157a08d5
+  group: advanced
+  tags:
+  - ocr
+  - multimodal
+  - vision
+  - llava
+  minRamGb: 12
+  devices:
+  - mac
+  description: Auto-curated OCR-capable VLM package (main + mmproj). F16 GGUF (~7.12
+    GB).
+  promptTemplate: Extract all readable text from this image. Preserve line breaks
+    and ordering.
+- id: xtuner-llava-llama-3-8b-v1-1-gguf-f16-ocr
+  name: llava llama 3 8b v1 1 gguf
+  family: llava
+  quantization: F16
+  sizeBytes: 16069403840
+  contextLength: 8192
+  downloadURL: https://huggingface.co/xtuner/llava-llama-3-8b-v1_1-gguf/resolve/main/llava-llama-3-8b-v1_1-f16.gguf
+  sha256: 6658f7332be8a0e11a77bb62dfac69a3ba11daa296f5ceffd79d2fa799106f55
+  mmprojDownloadURL: https://huggingface.co/xtuner/llava-llama-3-8b-v1_1-gguf/resolve/main/llava-llama-3-8b-v1_1-mmproj-f16.gguf
+  mmprojSizeBytes: 624434368
+  mmprojSha256: eb569aba7d65cf3da1d0369610eb6869f4a53ee369992a804d5810a80e9fa035
+  group: advanced
+  tags:
+  - ocr
+  - multimodal
+  - vision
+  - llava
+  minRamGb: 16
+  devices:
+  - mac
+  description: Auto-curated OCR-capable VLM package (main + mmproj). F16 GGUF (~14.97
+    GB).
+  promptTemplate: Extract all readable text from this image. Preserve line breaks
+    and ordering.
+- id: cmp-nct-llava-1-6-gguf-f16-ocr
+  name: llava 1.6 gguf
+  family: llava
+  quantization: F16
+  sizeBytes: 16654924032
+  contextLength: 32768
+  downloadURL: https://huggingface.co/cmp-nct/llava-1.6-gguf/resolve/main/ggml-yi-34b-f16-q_3_k.gguf
+  sha256: bc74eb3db3b7d8e94d7a1e925dc2f225527aa226ad7cc60f51496a2b580a0488
+  mmprojDownloadURL: https://huggingface.co/cmp-nct/llava-1.6-gguf/resolve/main/mmproj-llava-34b-f16-q6_k.gguf
+  mmprojSizeBytes: 288750272
+  mmprojSha256: 6839f8492abd75207eb0837f4ffc64488646d447f61241a452ec25422a30898f
+  group: advanced
+  tags:
+  - ocr
+  - multimodal
+  - vision
+  - llava
+  minRamGb: 16
+  devices:
+  - mac
+  description: Auto-curated OCR-capable VLM package (main + mmproj). F16 GGUF (~15.51
+    GB).
+  promptTemplate: Extract all readable text from this image. Preserve line breaks
+    and ordering.

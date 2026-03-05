@@ -1,25 +1,4 @@
 models:
-- id: menlo-jan-v3-4b-base-instruct-q4-k-m
-  name: Jan v3 4B base instruct
-  family: general
-  group: recommended
-  tags:
-  - general
-  - mobile
-  - instruct
-  - long-context
-  minRamGb: 4
-  devices:
-  - iphone
-  - ipad
-  - mac
-  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~2.5 GB) with 262144 context
-    length.
-  contextLength: 262144
-  hfRepo: janhq/Jan-v3-4B-base-instruct-gguf
-  fileName: Jan-v3-4b-base-instruct-Q4_K_M.gguf
-  quantization: Q4_K_M
-  sha256: 60b7a5dc9e3f7430659b12872a8807cfce8a6114d6aa32e2355157c4db1847aa
 - id: google-gemma-2-2b-it-q4-k-m
   name: gemma 2 2b it
   family: gemma
@@ -60,6 +39,27 @@ models:
   fileName: Llama-3.2-3B-Instruct-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: 6c1a2b41161032677be168d354123594c0e6e67d2b9227c84f296ad037c728ff
+- id: menlo-jan-v3-4b-base-instruct-q4-k-m
+  name: Jan v3 4B base instruct
+  family: general
+  group: recommended
+  tags:
+  - general
+  - mobile
+  - instruct
+  - long-context
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~2.5 GB) with 262144 context
+    length.
+  contextLength: 262144
+  hfRepo: janhq/Jan-v3-4B-base-instruct-gguf
+  fileName: Jan-v3-4b-base-instruct-Q4_K_M.gguf
+  quantization: Q4_K_M
+  sha256: 60b7a5dc9e3f7430659b12872a8807cfce8a6114d6aa32e2355157c4db1847aa
 - id: microsoft-phi-3-5-mini-instruct-q4-k-m
   name: Phi 3.5 mini instruct
   family: phi3

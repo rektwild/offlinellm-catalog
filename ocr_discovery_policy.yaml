@@ -1,0 +1,85 @@
+source:
+  endpoint: https://huggingface.co/api/models
+  search: llava gguf
+  sort: downloads
+  direction: -1
+  limit: 260
+  full: true
+
+selection:
+  targetCount: 6
+  minimumCount: 3
+  fallbackContextLength: 4096
+  popularityScore:
+    likesWeight: 120
+  bucketTargets:
+    small: 2
+    medium: 2
+    large: 2
+
+filters:
+  trustedAuthors:
+    - ggml-org
+    - xtuner
+    - cjpais
+    - second-state
+    - cmp-nct
+    - abetlen
+    - psipi
+    - kblueleaf
+    - billborkowski
+    - shadowbeast
+    - dragonSwing
+  hardRejectFlags:
+    - private
+    - gated
+    - disabled
+  minDownloads: 150
+  minLikes: 0
+  recencyFrom: "2023-01-01"
+  blocklistRepoSubstrings:
+    - uncensored
+    - nsfw
+    - erotic
+  quantizationPriority:
+    - F16
+    - Q8_0
+    - Q6_K
+    - Q5_K_M
+    - Q5_K_S
+    - Q4_K_M
+    - Q4_K_S
+    - Q4_0
+  sizeGb:
+    min: 0.3
+    max: 24.0
+
+files:
+  mmprojPathContains:
+    - mmproj
+  rejectPathRegex:
+    - "-\\d{5}-of-\\d{5}\\.gguf$"
+
+segmentation:
+  small:
+    maxSizeGb: 5.0
+    devices:
+      - ipad
+      - mac
+    minRamGb: 8
+    group: advanced
+  medium:
+    maxSizeGb: 12.0
+    devices:
+      - mac
+    minRamGb: 12
+    group: advanced
+  large:
+    maxSizeGb: 24.0
+    devices:
+      - mac
+    minRamGb: 16
+    group: advanced
+
+runtime:
+  promptTemplate: Extract all readable text from this image. Preserve line breaks and ordering.

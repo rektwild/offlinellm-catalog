@@ -1,0 +1,86 @@
+source:
+  endpoint: https://huggingface.co/api/models
+  searchTerms:
+    - embedding gguf
+    - bge gguf
+    - nomic gguf
+  sort: downloads
+  direction: -1
+  limit: 240
+  full: true
+
+selection:
+  targetCount: 20
+  minimumCount: 12
+  fallbackContextLength: 8192
+  popularityScore:
+    likesWeight: 150
+  bucketTargets:
+    small: 8
+    medium: 7
+    large: 5
+
+filters:
+  trustedAuthors:
+    - ggml-org
+    - qwen
+    - nomic-ai
+    - jinaai
+    - second-state
+    - bartowski
+    - unsloth
+    - microsoft
+    - peteram4
+    - fluidapp
+    - gaianet
+    - lmstudio-community
+  hardRejectFlags:
+    - private
+    - gated
+    - disabled
+  minDownloads: 500
+  minLikes: 0
+  recencyFrom: "2024-01-01"
+  blocklistRepoSubstrings:
+    - reranker
+  quantizationPriority:
+    - F16
+    - Q8_0
+    - Q6_K
+    - Q5_K_M
+    - Q5_K_S
+    - Q4_K_M
+    - Q4_K_S
+    - Q4_0
+  sizeGb:
+    min: 0.05
+    max: 10.0
+
+files:
+  rejectPathContains:
+    - mmproj
+  rejectPathRegex:
+    - "-\\d{5}-of-\\d{5}\\.gguf$"
+
+segmentation:
+  small:
+    maxSizeGb: 0.8
+    devices:
+      - iphone
+      - ipad
+      - mac
+    minRamGb: 4
+    group: recommended
+  medium:
+    maxSizeGb: 2.5
+    devices:
+      - ipad
+      - mac
+    minRamGb: 6
+    group: advanced
+  large:
+    maxSizeGb: 10.0
+    devices:
+      - mac
+    minRamGb: 8
+    group: advanced

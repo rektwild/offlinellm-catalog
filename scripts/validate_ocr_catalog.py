@@ -87,21 +87,37 @@ def validate_unique_ids(models: list[dict[str, Any]]) -> list[str]:
 
 
 def check_url(url: str) -> None:
-    request = urllib.request.Request(
+    head_request = urllib.request.Request(
+        url=url,
+        headers={"User-Agent": USER_AGENT, "Accept": "*/*"},
+        method="HEAD",
+    )
+    try:
+        with urllib.request.urlopen(head_request, timeout=REQUEST_TIMEOUT_SECONDS) as response:
+            status = getattr(response, "status", None) or response.getcode()
+            if 200 <= status < 400:
+                return
+            raise RuntimeError(f"Unexpected HTTP status {status}")
+    except urllib.error.HTTPError as exc:
+        if exc.code not in {405, 501}:
+            raise RuntimeError(f"HEAD failed with HTTP {exc.code}") from exc
+    except urllib.error.URLError as exc:
+        raise RuntimeError(f"HEAD failed: {exc.reason}") from exc
+
+    range_request = urllib.request.Request(
         url=url,
         headers={"User-Agent": USER_AGENT, "Accept": "*/*", "Range": "bytes=0-0"},
         method="GET",
     )
     try:
-        with urllib.request.urlopen(request, timeout=REQUEST_TIMEOUT_SECONDS) as response:
+        with urllib.request.urlopen(range_request, timeout=REQUEST_TIMEOUT_SECONDS) as response:
             status = getattr(response, "status", None) or response.getcode()
             if not 200 <= status < 400:
                 raise RuntimeError(f"Unexpected HTTP status {status}")
     except urllib.error.HTTPError as exc:
-        if exc.code in {401, 403}:
-            # Public repos may deny anonymous range probes. Allow and rely on runtime download checks.
-            return
-        raise
+        raise RuntimeError(f"Range GET failed with HTTP {exc.code}") from exc
+    except urllib.error.URLError as exc:
+        raise RuntimeError(f"Range GET failed: {exc.reason}") from exc
 
 
 def validate_urls(models: list[dict[str, Any]]) -> list[str]:
