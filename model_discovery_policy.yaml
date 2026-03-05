@@ -29,7 +29,12 @@ filters:
     - unsloth
     - LiquidAI
     - janhq
-    - TheBloke
+    - MaziyarPanahi
+    - QuantFactory
+    - tensorblock
+    - second-state
+    - mistralai
+    - meta-llama
   hardRejectFlags:
     - private
     - gated
