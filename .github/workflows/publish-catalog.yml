@@ -40,20 +40,26 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: python scripts/build_catalog.py
 
+      - name: Build OCR catalog
+        run: python scripts/build_ocr_catalog.py
+
       - name: Validate catalog
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: python scripts/validate_catalog.py
 
+      - name: Validate OCR catalog
+        run: python scripts/validate_ocr_catalog.py
+
       - name: Commit and push catalog
         run: |
-          if git diff --quiet -- curated_models.yaml catalog.json; then
+          if git diff --quiet -- curated_models.yaml catalog.json ocr_curated_models.yaml ocr_catalog.json; then
             echo "No catalog changes."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add curated_models.yaml catalog.json
+          git add curated_models.yaml catalog.json ocr_curated_models.yaml ocr_catalog.json
           git commit -m "chore: refresh curated models and catalog"
           git push

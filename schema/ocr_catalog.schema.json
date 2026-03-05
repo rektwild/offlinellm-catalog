@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/rektwild/offlinellm-catalog/main/schema/ocr_catalog.schema.json",
+  "title": "OfflineLLM OCR Catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "updatedAt", "models"],
+  "properties": {
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "updatedAt": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "models": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "family",
+          "quantization",
+          "sizeBytes",
+          "contextLength",
+          "downloadURL",
+          "sha256",
+          "mmprojDownloadURL",
+          "mmprojSizeBytes",
+          "mmprojSha256",
+          "group",
+          "tags",
+          "minRamGb",
+          "devices",
+          "description",
+          "promptTemplate"
+        ],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "name": { "type": "string", "minLength": 1 },
+          "family": { "type": "string", "minLength": 1 },
+          "quantization": { "type": "string", "minLength": 1 },
+          "sizeBytes": { "type": "integer", "minimum": 1 },
+          "contextLength": { "type": "integer", "minimum": 1 },
+          "downloadURL": { "type": "string", "format": "uri", "minLength": 1 },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-fA-F]{64}$"
+          },
+          "mmprojDownloadURL": { "type": "string", "format": "uri", "minLength": 1 },
+          "mmprojSizeBytes": { "type": "integer", "minimum": 1 },
+          "mmprojSha256": {
+            "type": "string",
+            "pattern": "^[0-9a-fA-F]{64}$"
+          },
+          "group": {
+            "type": "string",
+            "enum": ["recommended", "advanced", "custom"]
+          },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 },
+            "minItems": 1
+          },
+          "minRamGb": { "type": "integer", "minimum": 1 },
+          "devices": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 },
+            "minItems": 1
+          },
+          "description": { "type": "string", "minLength": 1 },
+          "promptTemplate": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

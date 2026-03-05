@@ -1,6 +1,7 @@
 # OfflineLLM Catalog
 
 Bu repo, uygulamanın uzaktan okuduğu `catalog.json` dosyasını üretir ve yayınlar.
+Ek olarak OCR için `ocr_catalog.json` dosyasını da üretir.
 
 ## Dosya Yapısı
 
@@ -8,9 +9,14 @@ Bu repo, uygulamanın uzaktan okuduğu `catalog.json` dosyasını üretir ve yay
 - `curated_models.yaml`: Otomatik keşifle üretilen curated model listesi.
 - `model_discovery_policy.yaml`: Hugging Face keşif filtreleri ve segmentasyon kuralları.
 - `schema/catalog.schema.json`: `ModelCatalog` ile birebir JSON şeması.
+- `ocr_catalog.json`: Uygulamanın OCR model kataloğu.
+- `ocr_curated_models.yaml`: OCR model curated listesi.
+- `schema/ocr_catalog.schema.json`: `OCRModelCatalog` için JSON şeması.
 - `scripts/refresh_curated_models.py`: HF'den adayları toplayıp `curated_models.yaml` üretir.
 - `scripts/build_catalog.py`: Hugging Face verisini alıp katalogu üretir.
 - `scripts/validate_catalog.py`: Schema + zorunlu alan + URL + duplicate id + semantik kural doğrulaması yapar.
+- `scripts/build_ocr_catalog.py`: `ocr_curated_models.yaml` dosyasından `ocr_catalog.json` üretir.
+- `scripts/validate_ocr_catalog.py`: OCR katalog için schema + URL + SHA doğrulaması yapar.
 - `.github/workflows/publish-catalog.yml`: Günlük otomasyon.
 
 ## Çalışma Prensibi
@@ -42,6 +48,8 @@ pip install -r requirements.txt
 python scripts/refresh_curated_models.py
 python scripts/build_catalog.py
 python scripts/validate_catalog.py
+python scripts/build_ocr_catalog.py
+python scripts/validate_ocr_catalog.py
 ```
 
 ## GitHub Action
@@ -50,6 +58,7 @@ Workflow her gün `06:00 Europe/Istanbul` için `03:00 UTC` cron ile çalışır
 
 - `build_catalog.py` çalışır.
 - `validate_catalog.py` çalışır.
-- `curated_models.yaml` ve `catalog.json` değiştiyse commit/push atılır.
+- `build_ocr_catalog.py` ve `validate_ocr_catalog.py` çalışır.
+- `curated_models.yaml`, `catalog.json`, `ocr_curated_models.yaml` ve `ocr_catalog.json` değiştiyse commit/push atılır.
 
 `HF_TOKEN` secret tanımlıysa kullanılır, tanımlı değilse anonim istekle devam edilir.

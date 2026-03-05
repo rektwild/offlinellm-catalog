@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "updatedAt": "2026-03-05",
+  "models": [
+    {
+      "id": "llava-1.6-vicuna-7b-q4",
+      "name": "LLaVA 1.6 Vicuna 7B",
+      "family": "llava",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 4795000000,
+      "contextLength": 4096,
+      "downloadURL": "https://huggingface.co/ggml-org/llava-v1.6-vicuna-7b-gguf/resolve/main/llava-v1.6-vicuna-7b-q4_k_m.gguf",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "mmprojDownloadURL": "https://huggingface.co/ggml-org/llava-v1.6-vicuna-7b-gguf/resolve/main/mmproj-model-f16.gguf",
+      "mmprojSizeBytes": 650000000,
+      "mmprojSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+      "group": "advanced",
+      "tags": [
+        "ocr",
+        "multimodal",
+        "vision"
+      ],
+      "minRamGb": 8,
+      "devices": [
+        "ipad",
+        "mac"
+      ],
+      "description": "Multimodal OCR model package (main + mmproj).",
+      "promptTemplate": "Extract all readable text from this image. Preserve line breaks and ordering."
+    }
+  ]
+}
