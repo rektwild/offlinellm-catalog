@@ -145,27 +145,6 @@ models:
   fileName: v5-nano-retrieval-F16.gguf
   quantization: F16
   sha256: 0c09e71f0bbcfceb06c44d56da2fdcee8b14b2e0d72b33e321ee2a7d7b350826
-- id: google-embeddinggemma-300m-qat-q4-0-unquantized-q4-0
-  name: embeddinggemma 300M qat q4 0 unquantized
-  family: gemma
-  group: recommended
-  tags:
-  - gemma
-  - embedding
-  - retrieval
-  - mobile
-  minRamGb: 4
-  devices:
-  - iphone
-  - ipad
-  - mac
-  description: Auto-curated embedding model from Hugging Face. Q4_0 GGUF (~0.21 GB)
-    with 2048 context length.
-  contextLength: 2048
-  hfRepo: lmstudio-community/embeddinggemma-300m-qat-GGUF
-  fileName: embeddinggemma-300m-qat-Q4_0.gguf
-  quantization: Q4_0
-  sha256: 5a9e0645541b06367dec3fd14d0019015b872cfe36d35dfb2a9d752dade09020
 - id: nomic-ai-nomic-embed-text-v1-f16
   name: nomic embed text v1
   family: nomic
@@ -187,6 +166,27 @@ models:
   fileName: nomic-embed-text-v1.f16.gguf
   quantization: F16
   sha256: e17ebde8d22d345aead60b0ed10726e8c45a06f4ba9a45223ab594526542e58f
+- id: google-embeddinggemma-300m-qat-q4-0-unquantized-q4-0
+  name: embeddinggemma 300M qat q4 0 unquantized
+  family: gemma
+  group: recommended
+  tags:
+  - gemma
+  - embedding
+  - retrieval
+  - mobile
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated embedding model from Hugging Face. Q4_0 GGUF (~0.21 GB)
+    with 2048 context length.
+  contextLength: 2048
+  hfRepo: lmstudio-community/embeddinggemma-300m-qat-GGUF
+  fileName: embeddinggemma-300m-qat-Q4_0.gguf
+  quantization: Q4_0
+  sha256: 5a9e0645541b06367dec3fd14d0019015b872cfe36d35dfb2a9d752dade09020
 - id: gaianet-nomic-embed-text-v1-5-embedding-gguf-f16
   name: Nomic embed text v1.5 Embedding GGUF
   family: nomic
