@@ -39,27 +39,6 @@ models:
   fileName: Llama-3.2-3B-Instruct-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: 6c1a2b41161032677be168d354123594c0e6e67d2b9227c84f296ad037c728ff
-- id: menlo-jan-v3-4b-base-instruct-q4-k-m
-  name: Jan v3 4B base instruct
-  family: general
-  group: recommended
-  tags:
-  - general
-  - mobile
-  - instruct
-  - long-context
-  minRamGb: 4
-  devices:
-  - iphone
-  - ipad
-  - mac
-  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~2.5 GB) with 262144 context
-    length.
-  contextLength: 262144
-  hfRepo: janhq/Jan-v3-4B-base-instruct-gguf
-  fileName: Jan-v3-4b-base-instruct-Q4_K_M.gguf
-  quantization: Q4_K_M
-  sha256: 60b7a5dc9e3f7430659b12872a8807cfce8a6114d6aa32e2355157c4db1847aa
 - id: qwen-qwen2-5-1-5b-instruct-q4-k-m
   name: Qwen2.5 1.5B Instruct
   family: qwen
@@ -100,6 +79,27 @@ models:
   fileName: qwen2.5-3b-instruct-q4_k_m.gguf
   quantization: Q4_K_M
   sha256: 626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d
+- id: menlo-jan-v3-4b-base-instruct-q4-k-m
+  name: Jan v3 4B base instruct
+  family: general
+  group: recommended
+  tags:
+  - general
+  - mobile
+  - instruct
+  - long-context
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~2.5 GB) with 262144 context
+    length.
+  contextLength: 262144
+  hfRepo: janhq/Jan-v3-4B-base-instruct-gguf
+  fileName: Jan-v3-4b-base-instruct-Q4_K_M.gguf
+  quantization: Q4_K_M
+  sha256: 60b7a5dc9e3f7430659b12872a8807cfce8a6114d6aa32e2355157c4db1847aa
 - id: microsoft-phi-3-5-mini-instruct-q4-k-m
   name: Phi 3.5 mini instruct
   family: phi3
@@ -299,43 +299,6 @@ models:
   fileName: qwen2.5-coder-7b-instruct-q4_k_m.gguf
   quantization: Q4_K_M
   sha256: 509287f78cb4d4cf6b3843734733b914b2c158e43e22a7f4bf5e963800894d3c
-- id: mistralai-mistral-7b-instruct-v0-3-q4-k-m
-  name: Mistral 7B Instruct v0.3
-  family: mistral
-  group: advanced
-  tags:
-  - mistral
-  - balanced
-  - instruct
-  minRamGb: 6
-  devices:
-  - ipad
-  - mac
-  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~4.1 GB) with 32768 context
-    length.
-  contextLength: 32768
-  hfRepo: MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF
-  fileName: Mistral-7B-Instruct-v0.3.Q4_K_M.gguf
-  quantization: Q4_K_M
-  sha256: 14850c84ff9f06e9b51d505d64815d5cc0cea0257380353ac0b3d21b21f6e024
-- id: qwen-qwen3-8b-q4-k-m
-  name: Qwen3 8B
-  family: qwen
-  group: advanced
-  tags:
-  - qwen
-  - balanced
-  minRamGb: 8
-  devices:
-  - ipad
-  - mac
-  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~4.7 GB) with 40960 context
-    length.
-  contextLength: 40960
-  hfRepo: Qwen/Qwen3-8B-GGUF
-  fileName: Qwen3-8B-Q4_K_M.gguf
-  quantization: Q4_K_M
-  sha256: d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785
 - id: deepseek-ai-deepseek-r1-distill-llama-8b-q4-k-m
   name: DeepSeek R1 Distill Llama 8B
   family: llama3
@@ -355,6 +318,43 @@ models:
   fileName: DeepSeek-R1-Distill-Llama-8B-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: 0addb1339a82385bcd973186cd80d18dcc71885d45eabd899781a118d03827d9
+- id: qwen-qwen3-8b-q4-k-m
+  name: Qwen3 8B
+  family: qwen
+  group: advanced
+  tags:
+  - qwen
+  - balanced
+  minRamGb: 8
+  devices:
+  - ipad
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~4.7 GB) with 40960 context
+    length.
+  contextLength: 40960
+  hfRepo: Qwen/Qwen3-8B-GGUF
+  fileName: Qwen3-8B-Q4_K_M.gguf
+  quantization: Q4_K_M
+  sha256: d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785
+- id: mistralai-mistral-7b-instruct-v0-3-q4-k-m
+  name: Mistral 7B Instruct v0.3
+  family: mistral
+  group: advanced
+  tags:
+  - mistral
+  - balanced
+  - instruct
+  minRamGb: 6
+  devices:
+  - ipad
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~4.1 GB) with 32768 context
+    length.
+  contextLength: 32768
+  hfRepo: MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF
+  fileName: Mistral-7B-Instruct-v0.3.Q4_K_M.gguf
+  quantization: Q4_K_M
+  sha256: 14850c84ff9f06e9b51d505d64815d5cc0cea0257380353ac0b3d21b21f6e024
 - id: google-gemma-2-9b-it-q4-k-m
   name: gemma 2 9b it
   family: gemma
