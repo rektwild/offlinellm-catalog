@@ -161,25 +161,6 @@ models:
   fileName: Qwen3-4B-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: f6f851777709861056efcdad3af01da38b31223a3ba26e61a4f8bf3a2195813a
-- id: qwen-qwen3-1-7b-q4-k-m
-  name: Qwen3 1.7B
-  family: qwen
-  group: recommended
-  tags:
-  - qwen
-  - mobile
-  minRamGb: 4
-  devices:
-  - iphone
-  - ipad
-  - mac
-  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~1.0 GB) with 40960 context
-    length.
-  contextLength: 40960
-  hfRepo: unsloth/Qwen3-1.7B-GGUF
-  fileName: Qwen3-1.7B-Q4_K_M.gguf
-  quantization: Q4_K_M
-  sha256: b139949c5bd74937ad8ed8c8cf3d9ffb1e99c866c823204dc42c0d91fa181897
 - id: deepseek-ai-deepseek-r1-distill-qwen-1-5b-q4-k-m
   name: DeepSeek R1 Distill Qwen 1.5B
   family: qwen
@@ -200,6 +181,25 @@ models:
   fileName: DeepSeek-R1-Distill-Qwen-1.5B-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: f3bdf9cf31dee4b57ae4e455a1cb0d01b5c2c1b50d72d3112141c195506c2840
+- id: qwen-qwen3-1-7b-q4-k-m
+  name: Qwen3 1.7B
+  family: qwen
+  group: recommended
+  tags:
+  - qwen
+  - mobile
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~1.0 GB) with 40960 context
+    length.
+  contextLength: 40960
+  hfRepo: unsloth/Qwen3-1.7B-GGUF
+  fileName: Qwen3-1.7B-Q4_K_M.gguf
+  quantization: Q4_K_M
+  sha256: b139949c5bd74937ad8ed8c8cf3d9ffb1e99c866c823204dc42c0d91fa181897
 - id: google-gemma-3-1b-it-q4-k-m
   name: gemma 3 1b it
   family: gemma
