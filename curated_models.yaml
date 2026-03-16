@@ -39,6 +39,27 @@ models:
   fileName: Llama-3.2-3B-Instruct-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: 6c1a2b41161032677be168d354123594c0e6e67d2b9227c84f296ad037c728ff
+- id: microsoft-phi-3-5-mini-instruct-q4-k-m
+  name: Phi 3.5 mini instruct
+  family: phi3
+  group: recommended
+  tags:
+  - phi3
+  - mobile
+  - instruct
+  - long-context
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~2.2 GB) with 131072 context
+    length.
+  contextLength: 131072
+  hfRepo: MaziyarPanahi/Phi-3.5-mini-instruct-GGUF
+  fileName: Phi-3.5-mini-instruct.Q4_K_M.gguf
+  quantization: Q4_K_M
+  sha256: 3f68916e850b107d8641d18bcd5548f0d66beef9e0a9077fe84ef28943eb7e88
 - id: qwen-qwen2-5-1-5b-instruct-q4-k-m
   name: Qwen2.5 1.5B Instruct
   family: qwen
@@ -79,27 +100,6 @@ models:
   fileName: qwen2.5-3b-instruct-q4_k_m.gguf
   quantization: Q4_K_M
   sha256: 626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d
-- id: microsoft-phi-3-5-mini-instruct-q4-k-m
-  name: Phi 3.5 mini instruct
-  family: phi3
-  group: recommended
-  tags:
-  - phi3
-  - mobile
-  - instruct
-  - long-context
-  minRamGb: 4
-  devices:
-  - iphone
-  - ipad
-  - mac
-  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~2.2 GB) with 131072 context
-    length.
-  contextLength: 131072
-  hfRepo: MaziyarPanahi/Phi-3.5-mini-instruct-GGUF
-  fileName: Phi-3.5-mini-instruct.Q4_K_M.gguf
-  quantization: Q4_K_M
-  sha256: 3f68916e850b107d8641d18bcd5548f0d66beef9e0a9077fe84ef28943eb7e88
 - id: menlo-jan-v3-4b-base-instruct-q4-k-m
   name: Jan v3 4B base instruct
   family: general
@@ -278,6 +278,25 @@ models:
   fileName: DeepSeek-R1-0528-Qwen3-8B-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: a86349a4180c4e6bb43f874c29c404fa2be3f90b15509bd6d86f697dba724ec1
+- id: mistralai-mistral-7b-instruct-v0-3-q4-k-m
+  name: Mistral 7B Instruct v0.3
+  family: mistral
+  group: advanced
+  tags:
+  - mistral
+  - balanced
+  - instruct
+  minRamGb: 6
+  devices:
+  - ipad
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~4.1 GB) with 32768 context
+    length.
+  contextLength: 32768
+  hfRepo: MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF
+  fileName: Mistral-7B-Instruct-v0.3.Q4_K_M.gguf
+  quantization: Q4_K_M
+  sha256: 14850c84ff9f06e9b51d505d64815d5cc0cea0257380353ac0b3d21b21f6e024
 - id: qwen-qwen2-5-coder-7b-instruct-q4-k-m
   name: Qwen2.5 Coder 7B Instruct
   family: qwen
@@ -299,25 +318,6 @@ models:
   fileName: qwen2.5-coder-7b-instruct-q4_k_m.gguf
   quantization: Q4_K_M
   sha256: 509287f78cb4d4cf6b3843734733b914b2c158e43e22a7f4bf5e963800894d3c
-- id: mistralai-mistral-7b-instruct-v0-3-q4-k-m
-  name: Mistral 7B Instruct v0.3
-  family: mistral
-  group: advanced
-  tags:
-  - mistral
-  - balanced
-  - instruct
-  minRamGb: 6
-  devices:
-  - ipad
-  - mac
-  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~4.1 GB) with 32768 context
-    length.
-  contextLength: 32768
-  hfRepo: MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF
-  fileName: Mistral-7B-Instruct-v0.3.Q4_K_M.gguf
-  quantization: Q4_K_M
-  sha256: 14850c84ff9f06e9b51d505d64815d5cc0cea0257380353ac0b3d21b21f6e024
 - id: deepseek-ai-deepseek-r1-distill-llama-8b-q4-k-m
   name: DeepSeek R1 Distill Llama 8B
   family: llama3
