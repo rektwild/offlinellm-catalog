@@ -1,25 +1,4 @@
 models:
-- id: google-embeddinggemma-300m-q8-0
-  name: embeddinggemma 300M
-  family: gemma
-  group: recommended
-  tags:
-  - gemma
-  - embedding
-  - retrieval
-  - mobile
-  minRamGb: 4
-  devices:
-  - iphone
-  - ipad
-  - mac
-  description: Auto-curated embedding model from Hugging Face. Q8_0 GGUF (~0.31 GB)
-    with 2048 context length.
-  contextLength: 2048
-  hfRepo: ggml-org/embeddinggemma-300M-GGUF
-  fileName: embeddinggemma-300M-Q8_0.gguf
-  quantization: Q8_0
-  sha256: f470220f84b6235197541352d22f10bf00098a8242c18eaacea9c8a4add557bc
 - id: nomic-ai-nomic-embed-text-v1-5-f16
   name: nomic embed text v1.5
   family: nomic
@@ -41,6 +20,27 @@ models:
   fileName: nomic-embed-text-v1.5.f16.gguf
   quantization: F16
   sha256: f7af6f66802f4df86eda10fe9bbcfc75c39562bed48ef6ace719a251cf1c2fdb
+- id: google-embeddinggemma-300m-q8-0
+  name: embeddinggemma 300M
+  family: gemma
+  group: recommended
+  tags:
+  - gemma
+  - embedding
+  - retrieval
+  - mobile
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated embedding model from Hugging Face. Q8_0 GGUF (~0.31 GB)
+    with 2048 context length.
+  contextLength: 2048
+  hfRepo: ggml-org/embeddinggemma-300M-GGUF
+  fileName: embeddinggemma-300M-Q8_0.gguf
+  quantization: Q8_0
+  sha256: f470220f84b6235197541352d22f10bf00098a8242c18eaacea9c8a4add557bc
 - id: google-embeddinggemma-300m-qat-q8-0-unquantized-q8-0
   name: embeddinggemma 300m qat q8 0 unquantized
   family: gemma
