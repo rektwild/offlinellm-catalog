@@ -1,6 +1,6 @@
 {
-  "version": 3,
-  "updatedAt": "2026-03-24",
+  "version": 4,
+  "updatedAt": "2026-03-25",
   "models": [
     {
       "id": "deepseek-ai-deepseek-r1-0528-qwen3-8b-q4-k-m",
@@ -295,6 +295,28 @@
       "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~4.6 GB) with 131072 context length."
     },
     {
+      "id": "meta-llama-meta-llama-3-8b-instruct-q4-k-m",
+      "name": "Meta Llama 3 8B Instruct",
+      "family": "llama3",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 4921246944,
+      "contextLength": 8192,
+      "downloadURL": "https://huggingface.co/MaziyarPanahi/Meta-Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct.Q4_K_M.gguf",
+      "sha256": "4903067381e3753e2629f9d20c52df0e43b675bed2735bc3efea351c7d07454d",
+      "group": "advanced",
+      "tags": [
+        "llama3",
+        "balanced",
+        "instruct"
+      ],
+      "minRamGb": 8,
+      "devices": [
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~4.6 GB) with 8192 context length."
+    },
+    {
       "id": "microsoft-phi-3-5-mini-instruct-q4-k-m",
       "name": "Phi 3.5 mini instruct",
       "family": "phi3",
@@ -317,27 +339,6 @@
         "mac"
       ],
       "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~2.2 GB) with 131072 context length."
-    },
-    {
-      "id": "microsoft-phi-4-gguf-q4-k-s",
-      "name": "phi 4 gguf",
-      "family": "phi3",
-      "quantization": "Q4_K_S",
-      "sizeBytes": 8440762560,
-      "contextLength": 16384,
-      "downloadURL": "https://huggingface.co/microsoft/phi-4-gguf/resolve/main/phi-4-Q4_K_S.gguf",
-      "sha256": "8a8189132ef70cd737e136d38b706e8cb832f9cdf3c744547694769e9313550e",
-      "group": "advanced",
-      "tags": [
-        "phi3",
-        "balanced"
-      ],
-      "minRamGb": 8,
-      "devices": [
-        "ipad",
-        "mac"
-      ],
-      "description": "Auto-curated from Hugging Face. Q4_K_S GGUF (~7.9 GB) with 16384 context length."
     },
     {
       "id": "mistralai-mistral-7b-instruct-v0-3-q4-k-m",
