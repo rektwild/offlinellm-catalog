@@ -62,26 +62,6 @@ models:
   fileName: embeddinggemma-300m-qat-Q8_0.gguf
   quantization: Q8_0
   sha256: 6fa0c02a9c302be6f977521d399b4de3a46310a4f2621ee0063747881b673f67
-- id: ibm-granite-granite-embedding-107m-multilingual-f16
-  name: granite embedding 107m multilingual
-  family: embedding
-  group: recommended
-  tags:
-  - embedding
-  - retrieval
-  - mobile
-  minRamGb: 4
-  devices:
-  - iphone
-  - ipad
-  - mac
-  description: Auto-curated embedding model from Hugging Face. F16 GGUF (~0.21 GB)
-    with 512 context length.
-  contextLength: 512
-  hfRepo: bartowski/granite-embedding-107m-multilingual-GGUF
-  fileName: granite-embedding-107m-multilingual-f16.gguf
-  quantization: F16
-  sha256: 3fc99928632fcecad589c401ec33bbba86b51c457e9813e3a1cb801ff4106e21
 - id: baai-bge-m3-q8-0
   name: bge m3
   family: bge
@@ -103,6 +83,26 @@ models:
   fileName: bge-m3-q8_0.gguf
   quantization: Q8_0
   sha256: aa473d51f451a22f0fcf39ba3330c14bed38a385712b1113440f69df4047a173
+- id: ibm-granite-granite-embedding-107m-multilingual-f16
+  name: granite embedding 107m multilingual
+  family: embedding
+  group: recommended
+  tags:
+  - embedding
+  - retrieval
+  - mobile
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated embedding model from Hugging Face. F16 GGUF (~0.21 GB)
+    with 512 context length.
+  contextLength: 512
+  hfRepo: bartowski/granite-embedding-107m-multilingual-GGUF
+  fileName: granite-embedding-107m-multilingual-f16.gguf
+  quantization: F16
+  sha256: 3fc99928632fcecad589c401ec33bbba86b51c457e9813e3a1cb801ff4106e21
 - id: nomic-ai-nomic-embed-text-v1-f16
   name: nomic embed text v1
   family: nomic
