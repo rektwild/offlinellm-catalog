@@ -121,27 +121,6 @@ models:
   fileName: Llama-3.2-1B-Instruct-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: 6f85a640a97cf2bf5b8e764087b1e83da0fdb51d7c9fab7d0fece9385611df83
-- id: menlo-jan-v3-4b-base-instruct-q4-k-m
-  name: Jan v3 4B base instruct
-  family: general
-  group: recommended
-  tags:
-  - general
-  - mobile
-  - instruct
-  - long-context
-  minRamGb: 4
-  devices:
-  - iphone
-  - ipad
-  - mac
-  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~2.5 GB) with 262144 context
-    length.
-  contextLength: 262144
-  hfRepo: janhq/Jan-v3-4B-base-instruct-gguf
-  fileName: Jan-v3-4b-base-instruct-Q4_K_M.gguf
-  quantization: Q4_K_M
-  sha256: 60b7a5dc9e3f7430659b12872a8807cfce8a6114d6aa32e2355157c4db1847aa
 - id: qwen-qwen3-4b-q4-k-m
   name: Qwen3 4B
   family: qwen
@@ -181,6 +160,27 @@ models:
   fileName: DeepSeek-R1-Distill-Qwen-1.5B-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: f3bdf9cf31dee4b57ae4e455a1cb0d01b5c2c1b50d72d3112141c195506c2840
+- id: menlo-jan-v3-4b-base-instruct-q4-k-m
+  name: Jan v3 4B base instruct
+  family: general
+  group: recommended
+  tags:
+  - general
+  - mobile
+  - instruct
+  - long-context
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~2.5 GB) with 262144 context
+    length.
+  contextLength: 262144
+  hfRepo: janhq/Jan-v3-4B-base-instruct-gguf
+  fileName: Jan-v3-4b-base-instruct-Q4_K_M.gguf
+  quantization: Q4_K_M
+  sha256: 60b7a5dc9e3f7430659b12872a8807cfce8a6114d6aa32e2355157c4db1847aa
 - id: google-gemma-3-1b-it-q4-k-m
   name: gemma 3 1b it
   family: gemma
