@@ -318,25 +318,24 @@ models:
   fileName: DeepSeek-R1-0528-Qwen3-8B-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: a86349a4180c4e6bb43f874c29c404fa2be3f90b15509bd6d86f697dba724ec1
-- id: qwen-qwen2-5-7b-instruct-q4-k-m
-  name: Qwen2.5 7B Instruct
-  family: qwen
+- id: google-gemma-2-9b-it-q4-k-m
+  name: gemma 2 9b it
+  family: gemma
   group: advanced
   tags:
-  - qwen
+  - gemma
   - balanced
-  - instruct
-  minRamGb: 6
+  minRamGb: 8
   devices:
   - ipad
   - mac
-  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~4.4 GB) with 32768 context
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~6.4 GB) with 8192 context
     length.
-  contextLength: 32768
-  hfRepo: bartowski/Qwen2.5-7B-Instruct-GGUF
-  fileName: Qwen2.5-7B-Instruct-Q4_K_M.gguf
+  contextLength: 8192
+  hfRepo: bartowski/gemma-2-9b-it-GGUF
+  fileName: gemma-2-9b-it-Q4_K_M-fp16.gguf
   quantization: Q4_K_M
-  sha256: 65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423
+  sha256: 0452e54ba9b6c5b2e466fbd7f28c089fefb7c3dceddcc2b75becab6b16cae523
 - id: deepseek-ai-deepseek-r1-distill-llama-8b-q4-k-m
   name: DeepSeek R1 Distill Llama 8B
   family: llama3
@@ -356,24 +355,25 @@ models:
   fileName: DeepSeek-R1-Distill-Llama-8B-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: 0addb1339a82385bcd973186cd80d18dcc71885d45eabd899781a118d03827d9
-- id: google-gemma-2-9b-it-q4-k-m
-  name: gemma 2 9b it
-  family: gemma
+- id: qwen-qwen2-5-7b-instruct-q4-k-m
+  name: Qwen2.5 7B Instruct
+  family: qwen
   group: advanced
   tags:
-  - gemma
+  - qwen
   - balanced
-  minRamGb: 8
+  - instruct
+  minRamGb: 6
   devices:
   - ipad
   - mac
-  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~6.4 GB) with 8192 context
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~4.4 GB) with 32768 context
     length.
-  contextLength: 8192
-  hfRepo: bartowski/gemma-2-9b-it-GGUF
-  fileName: gemma-2-9b-it-Q4_K_M-fp16.gguf
+  contextLength: 32768
+  hfRepo: bartowski/Qwen2.5-7B-Instruct-GGUF
+  fileName: Qwen2.5-7B-Instruct-Q4_K_M.gguf
   quantization: Q4_K_M
-  sha256: 0452e54ba9b6c5b2e466fbd7f28c089fefb7c3dceddcc2b75becab6b16cae523
+  sha256: 65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423
 - id: meta-llama-meta-llama-3-8b-instruct-q4-k-m
   name: Meta Llama 3 8B Instruct
   family: llama3
