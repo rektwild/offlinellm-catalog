@@ -19,7 +19,7 @@ models:
   hfRepo: ggml-org/embeddinggemma-300M-GGUF
   fileName: embeddinggemma-300M-Q8_0.gguf
   quantization: Q8_0
-  sha256: f470220f84b6235197541352d22f10bf00098a8242c18eaacea9c8a4add557bc
+  sha256: b5ce9d77a3fc4b3b39ccb5643c36777911cc4eb46a66962eadfa3f5f60490d63
 - id: nomic-ai-nomic-embed-text-v1-5-f16
   name: nomic embed text v1.5
   family: nomic

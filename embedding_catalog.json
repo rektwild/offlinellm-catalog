@@ -1,6 +1,6 @@
 {
-  "version": 5,
-  "updatedAt": "2026-04-29",
+  "version": 6,
+  "updatedAt": "2026-04-30",
   "models": [
     {
       "id": "baai-bge-m3-q8-0",
@@ -55,10 +55,10 @@
       "name": "embeddinggemma 300M",
       "family": "gemma",
       "quantization": "Q8_0",
-      "sizeBytes": 328576992,
+      "sizeBytes": 333590944,
       "contextLength": 2048,
       "downloadURL": "https://huggingface.co/ggml-org/embeddinggemma-300M-GGUF/resolve/main/embeddinggemma-300M-Q8_0.gguf",
-      "sha256": "f470220f84b6235197541352d22f10bf00098a8242c18eaacea9c8a4add557bc",
+      "sha256": "b5ce9d77a3fc4b3b39ccb5643c36777911cc4eb46a66962eadfa3f5f60490d63",
       "group": "recommended",
       "tags": [
         "gemma",
