@@ -337,6 +337,24 @@ models:
   fileName: DeepSeek-R1-Distill-Llama-8B-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: 0addb1339a82385bcd973186cd80d18dcc71885d45eabd899781a118d03827d9
+- id: google-gemma-2-9b-it-q4-k-m
+  name: gemma 2 9b it
+  family: gemma
+  group: advanced
+  tags:
+  - gemma
+  - balanced
+  minRamGb: 8
+  devices:
+  - ipad
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~6.4 GB) with 8192 context
+    length.
+  contextLength: 8192
+  hfRepo: bartowski/gemma-2-9b-it-GGUF
+  fileName: gemma-2-9b-it-Q4_K_M-fp16.gguf
+  quantization: Q4_K_M
+  sha256: 0452e54ba9b6c5b2e466fbd7f28c089fefb7c3dceddcc2b75becab6b16cae523
 - id: meta-llama-meta-llama-3-8b-instruct-q4-k-m
   name: Meta Llama 3 8B Instruct
   family: llama3
@@ -356,24 +374,6 @@ models:
   fileName: Meta-Llama-3-8B-Instruct.Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: 4903067381e3753e2629f9d20c52df0e43b675bed2735bc3efea351c7d07454d
-- id: google-gemma-2-9b-it-q4-k-m
-  name: gemma 2 9b it
-  family: gemma
-  group: advanced
-  tags:
-  - gemma
-  - balanced
-  minRamGb: 8
-  devices:
-  - ipad
-  - mac
-  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~6.4 GB) with 8192 context
-    length.
-  contextLength: 8192
-  hfRepo: bartowski/gemma-2-9b-it-GGUF
-  fileName: gemma-2-9b-it-Q4_K_M-fp16.gguf
-  quantization: Q4_K_M
-  sha256: 0452e54ba9b6c5b2e466fbd7f28c089fefb7c3dceddcc2b75becab6b16cae523
 - id: qwen-qwen3-8b-q4-k-m
   name: Qwen3 8B
   family: qwen
