@@ -1,6 +1,6 @@
 {
-  "version": 4,
-  "updatedAt": "2026-05-15",
+  "version": 5,
+  "updatedAt": "2026-05-16",
   "models": [
     {
       "id": "deepseek-ai-deepseek-r1-0528-qwen3-8b-q4-k-m",
@@ -175,29 +175,6 @@
         "mac"
       ],
       "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~0.8 GB) with 32768 context length."
-    },
-    {
-      "id": "liquidai-lfm2-2-6b-q4-k-m",
-      "name": "LFM2 2.6B",
-      "family": "general",
-      "quantization": "Q4_K_M",
-      "sizeBytes": 1671852256,
-      "contextLength": 128000,
-      "downloadURL": "https://huggingface.co/LiquidAI/LFM2-2.6B-GGUF/resolve/main/LFM2-2.6B-Q4_K_M-hip-optimized.gguf",
-      "sha256": "bb72b115a4ae7a3c6e23da4f18c39f46817288ae1a6e08277d440864c4c3276b",
-      "group": "recommended",
-      "tags": [
-        "general",
-        "mobile",
-        "long-context"
-      ],
-      "minRamGb": 4,
-      "devices": [
-        "iphone",
-        "ipad",
-        "mac"
-      ],
-      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~1.6 GB) with 128000 context length."
     },
     {
       "id": "menlo-jan-v3-4b-base-instruct-q4-k-m",
@@ -471,6 +448,30 @@
         "mac"
       ],
       "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~4.4 GB) with 32768 context length."
+    },
+    {
+      "id": "qwen-qwen2-5-coder-1-5b-instruct-q4-k-m",
+      "name": "Qwen2.5 Coder 1.5B Instruct",
+      "family": "qwen",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 1117320768,
+      "contextLength": 32768,
+      "downloadURL": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF/resolve/main/qwen2.5-coder-1.5b-instruct-q4_k_m.gguf",
+      "sha256": "cc324af070c2ecbfd324a30884d2f951a7ff756aba85cb811a6ec436933bb046",
+      "group": "recommended",
+      "tags": [
+        "qwen",
+        "mobile",
+        "coding",
+        "instruct"
+      ],
+      "minRamGb": 4,
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~1.0 GB) with 32768 context length."
     },
     {
       "id": "qwen-qwen2-5-coder-14b-instruct-q4-k-m",
