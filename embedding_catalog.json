@@ -1,6 +1,6 @@
 {
-  "version": 8,
-  "updatedAt": "2026-05-31",
+  "version": 9,
+  "updatedAt": "2026-06-01",
   "models": [
     {
       "id": "baai-bge-m3-q8-0",
@@ -49,30 +49,6 @@
         "mac"
       ],
       "description": "Auto-curated embedding model from Hugging Face. Q8_0 GGUF (~0.31 GB) with 2048 context length."
-    },
-    {
-      "id": "google-embeddinggemma-300m-qat-q4-0-unquantized-q4-0",
-      "name": "embeddinggemma 300M qat q4 0 unquantized",
-      "family": "gemma",
-      "quantization": "Q4_0",
-      "sizeBytes": 229093184,
-      "contextLength": 2048,
-      "downloadURL": "https://huggingface.co/lmstudio-community/embeddinggemma-300m-qat-GGUF/resolve/main/embeddinggemma-300m-qat-Q4_0.gguf",
-      "sha256": "5a9e0645541b06367dec3fd14d0019015b872cfe36d35dfb2a9d752dade09020",
-      "group": "recommended",
-      "tags": [
-        "gemma",
-        "embedding",
-        "retrieval",
-        "mobile"
-      ],
-      "minRamGb": 4,
-      "devices": [
-        "iphone",
-        "ipad",
-        "mac"
-      ],
-      "description": "Auto-curated embedding model from Hugging Face. Q4_0 GGUF (~0.21 GB) with 2048 context length."
     },
     {
       "id": "google-embeddinggemma-300m-qat-q8-0-unquantized-q8-0",
@@ -243,6 +219,29 @@
       "contextLength": 32768,
       "downloadURL": "https://huggingface.co/jinaai/jina-embeddings-v5-omni-small-clustering-GGUF/resolve/main/jina-embeddings-v5-omni-small-clustering-F16.gguf",
       "sha256": "e552d79f576125f15e8c6ab0f4c81915b652c3abde50ddea6d26e82b4ac65fe6",
+      "group": "advanced",
+      "tags": [
+        "jina",
+        "embedding",
+        "retrieval",
+        "balanced"
+      ],
+      "minRamGb": 6,
+      "devices": [
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated embedding model from Hugging Face. F16 GGUF (~1.12 GB) with 32768 context length."
+    },
+    {
+      "id": "jinaai-jina-embeddings-v5-omni-small-retrieval-f16",
+      "name": "jina embeddings v5 omni small retrieval",
+      "family": "jina",
+      "quantization": "F16",
+      "sizeBytes": 1197638976,
+      "contextLength": 32768,
+      "downloadURL": "https://huggingface.co/jinaai/jina-embeddings-v5-omni-small-retrieval-GGUF/resolve/main/jina-embeddings-v5-omni-small-retrieval-F16.gguf",
+      "sha256": "cddb89cc38388d70792a2c788e2f472c7df7ac1d0c44b6145a02dcb6d0758e24",
       "group": "advanced",
       "tags": [
         "jina",
