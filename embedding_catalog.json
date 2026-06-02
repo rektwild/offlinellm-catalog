@@ -1,6 +1,6 @@
 {
-  "version": 9,
-  "updatedAt": "2026-06-01",
+  "version": 10,
+  "updatedAt": "2026-06-02",
   "models": [
     {
       "id": "baai-bge-m3-q8-0",
@@ -166,29 +166,6 @@
       "description": "Auto-curated embedding model from Hugging Face. F16 GGUF (~2.88 GB) with 32768 context length."
     },
     {
-      "id": "jinaai-jina-embeddings-v3-f16",
-      "name": "jina embeddings v3",
-      "family": "jina",
-      "quantization": "F16",
-      "sizeBytes": 1124112864,
-      "contextLength": 8192,
-      "downloadURL": "https://huggingface.co/second-state/jina-embeddings-v3-GGUF/resolve/main/jina-embeddings-v3-f16.gguf",
-      "sha256": "b75ebb6fab6d4867ff94c7652e379f6c252ffb48ef5dc54a381a8ba1862f19e1",
-      "group": "advanced",
-      "tags": [
-        "jina",
-        "embedding",
-        "retrieval",
-        "balanced"
-      ],
-      "minRamGb": 6,
-      "devices": [
-        "ipad",
-        "mac"
-      ],
-      "description": "Auto-curated embedding model from Hugging Face. F16 GGUF (~1.05 GB) with 8192 context length."
-    },
-    {
       "id": "jinaai-jina-embeddings-v4-f16",
       "name": "jina embeddings v4",
       "family": "jina",
@@ -209,6 +186,30 @@
         "mac"
       ],
       "description": "Auto-curated embedding model from Hugging Face. F16 GGUF (~5.75 GB) with 128000 context length."
+    },
+    {
+      "id": "jinaai-jina-embeddings-v5-omni-nano-retrieval-f16",
+      "name": "jina embeddings v5 omni nano retrieval",
+      "family": "jina",
+      "quantization": "F16",
+      "sizeBytes": 431409536,
+      "contextLength": 8192,
+      "downloadURL": "https://huggingface.co/jinaai/jina-embeddings-v5-omni-nano-retrieval-GGUF/resolve/main/jina-embeddings-v5-omni-nano-retrieval-F16.gguf",
+      "sha256": "c2cc484bfb4a27556d122f254d85be365b73744cb6c17f5af3fe462a573c9c6a",
+      "group": "recommended",
+      "tags": [
+        "jina",
+        "embedding",
+        "retrieval",
+        "mobile"
+      ],
+      "minRamGb": 4,
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated embedding model from Hugging Face. F16 GGUF (~0.40 GB) with 8192 context length."
     },
     {
       "id": "jinaai-jina-embeddings-v5-omni-small-clustering-f16",
