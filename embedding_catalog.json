@@ -1,6 +1,6 @@
 {
-  "version": 11,
-  "updatedAt": "2026-06-12",
+  "version": 12,
+  "updatedAt": "2026-06-13",
   "models": [
     {
       "id": "baai-bge-m3-q8-0",
@@ -173,30 +173,6 @@
       "contextLength": 8192,
       "downloadURL": "https://huggingface.co/jinaai/jina-embeddings-v5-omni-nano-retrieval-GGUF/resolve/main/jina-embeddings-v5-omni-nano-retrieval-F16.gguf",
       "sha256": "c2cc484bfb4a27556d122f254d85be365b73744cb6c17f5af3fe462a573c9c6a",
-      "group": "recommended",
-      "tags": [
-        "jina",
-        "embedding",
-        "retrieval",
-        "mobile"
-      ],
-      "minRamGb": 4,
-      "devices": [
-        "iphone",
-        "ipad",
-        "mac"
-      ],
-      "description": "Auto-curated embedding model from Hugging Face. F16 GGUF (~0.40 GB) with 8192 context length."
-    },
-    {
-      "id": "jinaai-jina-embeddings-v5-omni-nano-text-matching-f16",
-      "name": "jina embeddings v5 omni nano text matching",
-      "family": "jina",
-      "quantization": "F16",
-      "sizeBytes": 431409536,
-      "contextLength": 8192,
-      "downloadURL": "https://huggingface.co/jinaai/jina-embeddings-v5-omni-nano-text-matching-GGUF/resolve/main/jina-embeddings-v5-omni-nano-text-matching-F16.gguf",
-      "sha256": "ba66175f9075c128380a324598d4180fa0a42c331b13a3bfd713187da3636d42",
       "group": "recommended",
       "tags": [
         "jina",
@@ -465,6 +441,30 @@
         "mac"
       ],
       "description": "Auto-curated embedding model from Hugging Face. Q8_0 GGUF (~0.60 GB) with 32768 context length."
+    },
+    {
+      "id": "unsloth-bge-small-en-v1-5-gguf-f16",
+      "name": "bge small en v1.5 GGUF",
+      "family": "bge",
+      "quantization": "F16",
+      "sizeBytes": 67582560,
+      "contextLength": 512,
+      "downloadURL": "https://huggingface.co/unsloth/bge-small-en-v1.5-GGUF/resolve/main/bge-small-en-v1.5-f16.gguf",
+      "sha256": "c5d2302edc429f679642433b9f96dd217799727a06e675abef3b40a79f5e1589",
+      "group": "recommended",
+      "tags": [
+        "bge",
+        "embedding",
+        "retrieval",
+        "mobile"
+      ],
+      "minRamGb": 4,
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated embedding model from Hugging Face. F16 GGUF (~0.06 GB) with 512 context length."
     }
   ]
 }
