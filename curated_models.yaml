@@ -18,26 +18,6 @@ models:
   fileName: gemma-2-2b-it-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: e0aee85060f168f0f2d8473d7ea41ce2f3230c1bc1374847505ea599288a7787
-- id: qwen-qwen2-5-3b-instruct-q4-k-m
-  name: Qwen2.5 3B Instruct
-  family: qwen
-  group: recommended
-  tags:
-  - qwen
-  - mobile
-  - instruct
-  minRamGb: 4
-  devices:
-  - iphone
-  - ipad
-  - mac
-  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~2.0 GB) with 32768 context
-    length.
-  contextLength: 32768
-  hfRepo: Qwen/Qwen2.5-3B-Instruct-GGUF
-  fileName: qwen2.5-3b-instruct-q4_k_m.gguf
-  quantization: Q4_K_M
-  sha256: 626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d
 - id: qwen-qwen2-5-1-5b-instruct-q4-k-m
   name: Qwen2.5 1.5B Instruct
   family: qwen
@@ -58,6 +38,26 @@ models:
   fileName: qwen2.5-1.5b-instruct-q4_k_m.gguf
   quantization: Q4_K_M
   sha256: 6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e
+- id: qwen-qwen2-5-3b-instruct-q4-k-m
+  name: Qwen2.5 3B Instruct
+  family: qwen
+  group: recommended
+  tags:
+  - qwen
+  - mobile
+  - instruct
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~2.0 GB) with 32768 context
+    length.
+  contextLength: 32768
+  hfRepo: Qwen/Qwen2.5-3B-Instruct-GGUF
+  fileName: qwen2.5-3b-instruct-q4_k_m.gguf
+  quantization: Q4_K_M
+  sha256: 626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d
 - id: meta-llama-llama-3-2-3b-instruct-q4-k-m
   name: Llama 3.2 3B Instruct
   family: llama3
@@ -79,27 +79,6 @@ models:
   fileName: Llama-3.2-3B-Instruct-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: 6c1a2b41161032677be168d354123594c0e6e67d2b9227c84f296ad037c728ff
-- id: microsoft-phi-3-5-mini-instruct-q4-k-m
-  name: Phi 3.5 mini instruct
-  family: phi3
-  group: recommended
-  tags:
-  - phi3
-  - mobile
-  - instruct
-  - long-context
-  minRamGb: 4
-  devices:
-  - iphone
-  - ipad
-  - mac
-  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~2.2 GB) with 131072 context
-    length.
-  contextLength: 131072
-  hfRepo: MaziyarPanahi/Phi-3.5-mini-instruct-GGUF
-  fileName: Phi-3.5-mini-instruct.Q4_K_M.gguf
-  quantization: Q4_K_M
-  sha256: 3f68916e850b107d8641d18bcd5548f0d66beef9e0a9077fe84ef28943eb7e88
 - id: meta-llama-llama-3-2-1b-instruct-q4-k-m
   name: Llama 3.2 1B Instruct
   family: llama3
@@ -121,6 +100,27 @@ models:
   fileName: Llama-3.2-1B-Instruct-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: 6f85a640a97cf2bf5b8e764087b1e83da0fdb51d7c9fab7d0fece9385611df83
+- id: microsoft-phi-3-5-mini-instruct-q4-k-m
+  name: Phi 3.5 mini instruct
+  family: phi3
+  group: recommended
+  tags:
+  - phi3
+  - mobile
+  - instruct
+  - long-context
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~2.2 GB) with 131072 context
+    length.
+  contextLength: 131072
+  hfRepo: MaziyarPanahi/Phi-3.5-mini-instruct-GGUF
+  fileName: Phi-3.5-mini-instruct.Q4_K_M.gguf
+  quantization: Q4_K_M
+  sha256: 3f68916e850b107d8641d18bcd5548f0d66beef9e0a9077fe84ef28943eb7e88
 - id: qwen-qwen3-4b-q4-k-m
   name: Qwen3 4B
   family: qwen
@@ -470,26 +470,6 @@ models:
   fileName: qwen2.5-coder-32b-instruct-q4_k_m.gguf
   quantization: Q4_K_M
   sha256: 4d64b316b5e6319d9613e0d97935d9ebd631fc7e334da400d00085eca749d085
-- id: qwen-qwen2-5-coder-14b-instruct-q4-k-m
-  name: Qwen2.5 Coder 14B Instruct
-  family: qwen
-  group: advanced
-  tags:
-  - qwen
-  - powerful
-  - coding
-  - instruct
-  - long-context
-  minRamGb: 12
-  devices:
-  - mac
-  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~8.4 GB) with 131072 context
-    length.
-  contextLength: 131072
-  hfRepo: Qwen/Qwen2.5-Coder-14B-Instruct-GGUF
-  fileName: qwen2.5-coder-14b-instruct-q4_k_m.gguf
-  quantization: Q4_K_M
-  sha256: c1e659736d89ac1065fb495330fb824d94001974a4bfa78e7270e43476a8d940
 - id: deepseek-ai-deepseek-r1-distill-qwen-14b-q4-k-m
   name: DeepSeek R1 Distill Qwen 14B
   family: qwen
@@ -526,6 +506,26 @@ models:
   fileName: DeepSeek-R1-Distill-Qwen-32B-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: bed9b0f551f5b95bf9da5888a48f0f87c37ad6b72519c4cbd775f54ac0b9fc62
+- id: qwen-qwen2-5-coder-14b-instruct-q4-k-m
+  name: Qwen2.5 Coder 14B Instruct
+  family: qwen
+  group: advanced
+  tags:
+  - qwen
+  - powerful
+  - coding
+  - instruct
+  - long-context
+  minRamGb: 12
+  devices:
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~8.4 GB) with 131072 context
+    length.
+  contextLength: 131072
+  hfRepo: Qwen/Qwen2.5-Coder-14B-Instruct-GGUF
+  fileName: qwen2.5-coder-14b-instruct-q4_k_m.gguf
+  quantization: Q4_K_M
+  sha256: c1e659736d89ac1065fb495330fb824d94001974a4bfa78e7270e43476a8d940
 - id: qwen-qwen3-30b-a3b-q4-k-m
   name: Qwen3 30B A3B
   family: qwen
