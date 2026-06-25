@@ -20,27 +20,6 @@ models:
   fileName: embeddinggemma-300M-Q8_0.gguf
   quantization: Q8_0
   sha256: b5ce9d77a3fc4b3b39ccb5643c36777911cc4eb46a66962eadfa3f5f60490d63
-- id: nomic-ai-nomic-embed-text-v1-5-f16
-  name: nomic embed text v1.5
-  family: nomic
-  group: recommended
-  tags:
-  - nomic
-  - embedding
-  - retrieval
-  - mobile
-  minRamGb: 4
-  devices:
-  - iphone
-  - ipad
-  - mac
-  description: Auto-curated embedding model from Hugging Face. F16 GGUF (~0.26 GB)
-    with 2048 context length.
-  contextLength: 2048
-  hfRepo: nomic-ai/nomic-embed-text-v1.5-GGUF
-  fileName: nomic-embed-text-v1.5.f16.gguf
-  quantization: F16
-  sha256: f7af6f66802f4df86eda10fe9bbcfc75c39562bed48ef6ace719a251cf1c2fdb
 - id: unsloth-bge-small-en-v1-5-gguf-f16
   name: bge small en v1.5 GGUF
   family: bge
@@ -62,6 +41,27 @@ models:
   fileName: bge-small-en-v1.5-f16.gguf
   quantization: F16
   sha256: c5d2302edc429f679642433b9f96dd217799727a06e675abef3b40a79f5e1589
+- id: nomic-ai-nomic-embed-text-v1-5-f16
+  name: nomic embed text v1.5
+  family: nomic
+  group: recommended
+  tags:
+  - nomic
+  - embedding
+  - retrieval
+  - mobile
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated embedding model from Hugging Face. F16 GGUF (~0.26 GB)
+    with 2048 context length.
+  contextLength: 2048
+  hfRepo: nomic-ai/nomic-embed-text-v1.5-GGUF
+  fileName: nomic-embed-text-v1.5.f16.gguf
+  quantization: F16
+  sha256: f7af6f66802f4df86eda10fe9bbcfc75c39562bed48ef6ace719a251cf1c2fdb
 - id: google-embeddinggemma-300m-qat-q8-0-unquantized-q8-0
   name: embeddinggemma 300m qat q8 0 unquantized
   family: gemma
