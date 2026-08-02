@@ -1,6 +1,6 @@
 {
-  "version": 21,
-  "updatedAt": "2026-08-01",
+  "version": 22,
+  "updatedAt": "2026-08-02",
   "models": [
     {
       "id": "baai-bge-m3-q8-0",
@@ -75,6 +75,30 @@
       "description": "Auto-curated embedding model from Hugging Face. Q4_0 GGUF (~0.21 GB) with 2048 context length."
     },
     {
+      "id": "google-embeddinggemma-300m-qat-q8-0-unquantized-q8-0",
+      "name": "embeddinggemma 300m qat q8 0 unquantized",
+      "family": "gemma",
+      "quantization": "Q8_0",
+      "sizeBytes": 328577056,
+      "contextLength": 2048,
+      "downloadURL": "https://huggingface.co/ggml-org/embeddinggemma-300m-qat-q8_0-GGUF/resolve/main/embeddinggemma-300m-qat-Q8_0.gguf",
+      "sha256": "6fa0c02a9c302be6f977521d399b4de3a46310a4f2621ee0063747881b673f67",
+      "group": "recommended",
+      "tags": [
+        "gemma",
+        "embedding",
+        "retrieval",
+        "mobile"
+      ],
+      "minRamGb": 4,
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated embedding model from Hugging Face. Q8_0 GGUF (~0.31 GB) with 2048 context length."
+    },
+    {
       "id": "ibm-granite-granite-embedding-107m-multilingual-f16",
       "name": "granite embedding 107m multilingual",
       "family": "embedding",
@@ -96,29 +120,6 @@
         "mac"
       ],
       "description": "Auto-curated embedding model from Hugging Face. F16 GGUF (~0.21 GB) with 512 context length."
-    },
-    {
-      "id": "ibm-granite-granite-embedding-125m-english-f16",
-      "name": "granite embedding 125m english",
-      "family": "embedding",
-      "quantization": "F16",
-      "sizeBytes": 250916704,
-      "contextLength": 512,
-      "downloadURL": "https://huggingface.co/bartowski/granite-embedding-125m-english-GGUF/resolve/main/granite-embedding-125m-english-f16.gguf",
-      "sha256": "e2950cf0228514e0e81c6f0701a62a9e4763990ce660b4a3c0329cd6a4acd4b9",
-      "group": "recommended",
-      "tags": [
-        "embedding",
-        "retrieval",
-        "mobile"
-      ],
-      "minRamGb": 4,
-      "devices": [
-        "iphone",
-        "ipad",
-        "mac"
-      ],
-      "description": "Auto-curated embedding model from Hugging Face. F16 GGUF (~0.23 GB) with 512 context length."
     },
     {
       "id": "ibm-granite-granite-embedding-278m-multilingual-f16",
@@ -187,30 +188,6 @@
         "mac"
       ],
       "description": "Auto-curated embedding model from Hugging Face. F16 GGUF (~2.88 GB) with 32768 context length."
-    },
-    {
-      "id": "jinaai-jina-embeddings-v2-base-code-f16",
-      "name": "jina embeddings v2 base code",
-      "family": "jina",
-      "quantization": "F16",
-      "sizeBytes": 322997920,
-      "contextLength": 8192,
-      "downloadURL": "https://huggingface.co/second-state/jina-embeddings-v2-base-code-GGUF/resolve/main/jina-embeddings-v2-base-code-f16.gguf",
-      "sha256": "ca9829b369c715e486e9fdf7ec9bee3f91ad91028d867220bb686732947b65a5",
-      "group": "recommended",
-      "tags": [
-        "jina",
-        "embedding",
-        "retrieval",
-        "mobile"
-      ],
-      "minRamGb": 4,
-      "devices": [
-        "iphone",
-        "ipad",
-        "mac"
-      ],
-      "description": "Auto-curated embedding model from Hugging Face. F16 GGUF (~0.30 GB) with 8192 context length."
     },
     {
       "id": "jinaai-jina-embeddings-v3-f16",
@@ -464,6 +441,30 @@
         "mac"
       ],
       "description": "Auto-curated embedding model from Hugging Face. Q8_0 GGUF (~0.60 GB) with 32768 context length."
+    },
+    {
+      "id": "unsloth-bge-small-en-v1-5-gguf-f16",
+      "name": "bge small en v1.5 GGUF",
+      "family": "bge",
+      "quantization": "F16",
+      "sizeBytes": 67582560,
+      "contextLength": 512,
+      "downloadURL": "https://huggingface.co/unsloth/bge-small-en-v1.5-GGUF/resolve/main/bge-small-en-v1.5-f16.gguf",
+      "sha256": "c5d2302edc429f679642433b9f96dd217799727a06e675abef3b40a79f5e1589",
+      "group": "recommended",
+      "tags": [
+        "bge",
+        "embedding",
+        "retrieval",
+        "mobile"
+      ],
+      "minRamGb": 4,
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated embedding model from Hugging Face. F16 GGUF (~0.06 GB) with 512 context length."
     }
   ]
 }
