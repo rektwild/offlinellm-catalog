@@ -20,27 +20,6 @@ models:
   fileName: embeddinggemma-300M-Q8_0.gguf
   quantization: Q8_0
   sha256: b5ce9d77a3fc4b3b39ccb5643c36777911cc4eb46a66962eadfa3f5f60490d63
-- id: unsloth-bge-small-en-v1-5-gguf-f16
-  name: bge small en v1.5 GGUF
-  family: bge
-  group: recommended
-  tags:
-  - bge
-  - embedding
-  - retrieval
-  - mobile
-  minRamGb: 4
-  devices:
-  - iphone
-  - ipad
-  - mac
-  description: Auto-curated embedding model from Hugging Face. F16 GGUF (~0.06 GB)
-    with 512 context length.
-  contextLength: 512
-  hfRepo: unsloth/bge-small-en-v1.5-GGUF
-  fileName: bge-small-en-v1.5-f16.gguf
-  quantization: F16
-  sha256: c5d2302edc429f679642433b9f96dd217799727a06e675abef3b40a79f5e1589
 - id: google-embeddinggemma-300m-qat-q8-0-unquantized-q8-0
   name: embeddinggemma 300m qat q8 0 unquantized
   family: gemma
@@ -62,6 +41,27 @@ models:
   fileName: embeddinggemma-300m-qat-Q8_0.gguf
   quantization: Q8_0
   sha256: 6fa0c02a9c302be6f977521d399b4de3a46310a4f2621ee0063747881b673f67
+- id: unsloth-bge-small-en-v1-5-gguf-f16
+  name: bge small en v1.5 GGUF
+  family: bge
+  group: recommended
+  tags:
+  - bge
+  - embedding
+  - retrieval
+  - mobile
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated embedding model from Hugging Face. F16 GGUF (~0.06 GB)
+    with 512 context length.
+  contextLength: 512
+  hfRepo: unsloth/bge-small-en-v1.5-GGUF
+  fileName: bge-small-en-v1.5-f16.gguf
+  quantization: F16
+  sha256: c5d2302edc429f679642433b9f96dd217799727a06e675abef3b40a79f5e1589
 - id: baai-bge-m3-q8-0
   name: bge m3
   family: bge
