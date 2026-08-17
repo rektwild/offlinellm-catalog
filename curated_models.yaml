@@ -202,25 +202,6 @@ models:
   fileName: qwen2.5-coder-3b-instruct-q4_k_m.gguf
   quantization: Q4_K_M
   sha256: 724fb256bec1ff062b2f65e4569e871ad2e95ab2a3989723d1769c54294730b7
-- id: google-gemma-3-1b-it-q4-k-m
-  name: gemma 3 1b it
-  family: gemma
-  group: recommended
-  tags:
-  - gemma
-  - mobile
-  minRamGb: 4
-  devices:
-  - iphone
-  - ipad
-  - mac
-  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~0.8 GB) with 32768 context
-    length.
-  contextLength: 32768
-  hfRepo: unsloth/gemma-3-1b-it-GGUF
-  fileName: gemma-3-1b-it-Q4_K_M.gguf
-  quantization: Q4_K_M
-  sha256: 8270790f3ab69fdfe860b7b64008d9a19986d8df7e407bb018184caa08798ebd
 - id: qwen-qwen3-1-7b-q4-k-m
   name: Qwen3 1.7B
   family: qwen
@@ -240,6 +221,25 @@ models:
   fileName: Qwen3-1.7B-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: b139949c5bd74937ad8ed8c8cf3d9ffb1e99c866c823204dc42c0d91fa181897
+- id: google-gemma-3-1b-it-q4-k-m
+  name: gemma 3 1b it
+  family: gemma
+  group: recommended
+  tags:
+  - gemma
+  - mobile
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~0.8 GB) with 32768 context
+    length.
+  contextLength: 32768
+  hfRepo: unsloth/gemma-3-1b-it-GGUF
+  fileName: gemma-3-1b-it-Q4_K_M.gguf
+  quantization: Q4_K_M
+  sha256: 8270790f3ab69fdfe860b7b64008d9a19986d8df7e407bb018184caa08798ebd
 - id: meta-llama-meta-llama-3-1-8b-instruct-q4-k-m
   name: Meta Llama 3.1 8B Instruct
   family: llama3
