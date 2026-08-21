@@ -20,27 +20,6 @@ models:
   fileName: embeddinggemma-300M-Q8_0.gguf
   quantization: Q8_0
   sha256: b5ce9d77a3fc4b3b39ccb5643c36777911cc4eb46a66962eadfa3f5f60490d63
-- id: google-embeddinggemma-300m-qat-q8-0-unquantized-q8-0
-  name: embeddinggemma 300m qat q8 0 unquantized
-  family: gemma
-  group: recommended
-  tags:
-  - gemma
-  - embedding
-  - retrieval
-  - mobile
-  minRamGb: 4
-  devices:
-  - iphone
-  - ipad
-  - mac
-  description: Auto-curated embedding model from Hugging Face. Q8_0 GGUF (~0.31 GB)
-    with 2048 context length.
-  contextLength: 2048
-  hfRepo: ggml-org/embeddinggemma-300m-qat-q8_0-GGUF
-  fileName: embeddinggemma-300m-qat-Q8_0.gguf
-  quantization: Q8_0
-  sha256: 6fa0c02a9c302be6f977521d399b4de3a46310a4f2621ee0063747881b673f67
 - id: unsloth-bge-small-en-v1-5-gguf-f16
   name: bge small en v1.5 GGUF
   family: bge
@@ -62,6 +41,27 @@ models:
   fileName: bge-small-en-v1.5-f16.gguf
   quantization: F16
   sha256: c5d2302edc429f679642433b9f96dd217799727a06e675abef3b40a79f5e1589
+- id: google-embeddinggemma-300m-qat-q8-0-unquantized-q8-0
+  name: embeddinggemma 300m qat q8 0 unquantized
+  family: gemma
+  group: recommended
+  tags:
+  - gemma
+  - embedding
+  - retrieval
+  - mobile
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated embedding model from Hugging Face. Q8_0 GGUF (~0.31 GB)
+    with 2048 context length.
+  contextLength: 2048
+  hfRepo: ggml-org/embeddinggemma-300m-qat-q8_0-GGUF
+  fileName: embeddinggemma-300m-qat-Q8_0.gguf
+  quantization: Q8_0
+  sha256: 6fa0c02a9c302be6f977521d399b4de3a46310a4f2621ee0063747881b673f67
 - id: baai-bge-m3-q8-0
   name: bge m3
   family: bge
@@ -208,26 +208,6 @@ models:
   fileName: v5-nano-retrieval-F16.gguf
   quantization: F16
   sha256: 0c09e71f0bbcfceb06c44d56da2fdcee8b14b2e0d72b33e321ee2a7d7b350826
-- id: ibm-granite-granite-embedding-278m-multilingual-f16
-  name: granite embedding 278m multilingual
-  family: embedding
-  group: recommended
-  tags:
-  - embedding
-  - retrieval
-  - mobile
-  minRamGb: 4
-  devices:
-  - iphone
-  - ipad
-  - mac
-  description: Auto-curated embedding model from Hugging Face. F16 GGUF (~0.52 GB)
-    with 512 context length.
-  contextLength: 512
-  hfRepo: bartowski/granite-embedding-278m-multilingual-GGUF
-  fileName: granite-embedding-278m-multilingual-f16.gguf
-  quantization: F16
-  sha256: dd17c0216f6afeb9bd7e5b578cc0b0c3dbd1b8df9da09dff76b5d990b9dd0011
 - id: qwen-qwen3-0-6b-base-f16
   name: Qwen3 0.6B Base
   family: qwen
@@ -386,6 +366,25 @@ models:
   fileName: jina-embeddings-v4-text-retrieval-F16.gguf
   quantization: F16
   sha256: 2f50f779ebd886702d905e767dde5f3e245c91f0add726cedaa562c4e79a8f00
+- id: jinaai-jina-code-embeddings-1-5b-f16
+  name: jina code embeddings 1.5b
+  family: jina
+  group: advanced
+  tags:
+  - jina
+  - embedding
+  - retrieval
+  - powerful
+  minRamGb: 8
+  devices:
+  - mac
+  description: Auto-curated embedding model from Hugging Face. F16 GGUF (~2.88 GB)
+    with 32768 context length.
+  contextLength: 32768
+  hfRepo: jinaai/jina-code-embeddings-1.5b-GGUF
+  fileName: jina-code-embeddings-1.5b-F16.gguf
+  quantization: F16
+  sha256: d3252a81a91ed4ffe667d28faa2f215e6ad343af4e1afa6d53c11c985acff357
 - id: nomic-ai-nomic-embed-code-q8-0
   name: nomic embed code
   family: nomic
