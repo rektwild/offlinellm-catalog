@@ -1,6 +1,6 @@
 {
-  "version": 6,
-  "updatedAt": "2026-09-26",
+  "version": 7,
+  "updatedAt": "2026-09-27",
   "models": [
     {
       "id": "deepseek-ai-deepseek-r1-0528-qwen3-8b-q4-k-m",
@@ -337,6 +337,27 @@
       "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~10.8 GB) with 131072 context length."
     },
     {
+      "id": "qwen-qwen-agentworld-35b-a3b-q4-k-m",
+      "name": "Qwen AgentWorld 35B A3B",
+      "family": "qwen",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 22134529280,
+      "contextLength": 262144,
+      "downloadURL": "https://huggingface.co/unsloth/Qwen-AgentWorld-35B-A3B-GGUF/resolve/main/Qwen-AgentWorld-35B-A3B-UD-Q4_K_M.gguf",
+      "sha256": "e7a8eafdd8013443b6bcc4b6fb47b2d2025f772d359650b9ceb7d75971e22cad",
+      "group": "advanced",
+      "tags": [
+        "qwen",
+        "powerful",
+        "long-context"
+      ],
+      "minRamGb": 16,
+      "devices": [
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~20.6 GB) with 262144 context length."
+    },
+    {
       "id": "qwen-qwen2-5-1-5b-instruct-q4-k-m",
       "name": "Qwen2.5 1.5B Instruct",
       "family": "qwen",
@@ -584,26 +605,6 @@
         "mac"
       ],
       "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~8.4 GB) with 40960 context length."
-    },
-    {
-      "id": "qwen-qwen3-30b-a3b-q4-k-m",
-      "name": "Qwen3 30B A3B",
-      "family": "qwen",
-      "quantization": "Q4_K_M",
-      "sizeBytes": 18556686912,
-      "contextLength": 40960,
-      "downloadURL": "https://huggingface.co/unsloth/Qwen3-30B-A3B-GGUF/resolve/main/Qwen3-30B-A3B-Q4_K_M.gguf",
-      "sha256": "9f1a24700a339b09c06009b729b5c809e0b64c213b8af5b711b3dbdfd0c5ba48",
-      "group": "advanced",
-      "tags": [
-        "qwen",
-        "powerful"
-      ],
-      "minRamGb": 16,
-      "devices": [
-        "mac"
-      ],
-      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~17.3 GB) with 40960 context length."
     },
     {
       "id": "qwen-qwen3-4b-q4-k-m",
