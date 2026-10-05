@@ -1,6 +1,6 @@
 {
-  "version": 31,
-  "updatedAt": "2026-10-04",
+  "version": 32,
+  "updatedAt": "2026-10-05",
   "models": [
     {
       "id": "baai-bge-m3-q8-0",
@@ -49,6 +49,30 @@
         "mac"
       ],
       "description": "Auto-curated embedding model from Hugging Face. Q8_0 GGUF (~0.31 GB) with 2048 context length."
+    },
+    {
+      "id": "google-embeddinggemma-300m-qat-q4-0-unquantized-q4-0",
+      "name": "embeddinggemma 300m qat q4 0 unquantized",
+      "family": "gemma",
+      "quantization": "Q4_0",
+      "sizeBytes": 277852192,
+      "contextLength": 2048,
+      "downloadURL": "https://huggingface.co/ggml-org/embeddinggemma-300M-qat-q4_0-GGUF/resolve/main/embeddinggemma-300M-qat-Q4_0.gguf",
+      "sha256": "50d28e22432a148f6f8a86eab3700f92add5d1f54baf7790675a2a4dadbccf26",
+      "group": "recommended",
+      "tags": [
+        "gemma",
+        "embedding",
+        "retrieval",
+        "mobile"
+      ],
+      "minRamGb": 4,
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated embedding model from Hugging Face. Q4_0 GGUF (~0.26 GB) with 2048 context length."
     },
     {
       "id": "google-embeddinggemma-300m-qat-q8-0-unquantized-q8-0",
@@ -417,30 +441,6 @@
         "mac"
       ],
       "description": "Auto-curated embedding model from Hugging Face. F16 GGUF (~7.50 GB) with 40960 context length."
-    },
-    {
-      "id": "qwen-qwen3-embedding-0-6b-q8-0",
-      "name": "Qwen3 Embedding 0.6B",
-      "family": "qwen",
-      "quantization": "Q8_0",
-      "sizeBytes": 639150144,
-      "contextLength": 32768,
-      "downloadURL": "https://huggingface.co/PeterAM4/Qwen3-Embedding-0.6B-GGUF/resolve/main/Qwen3-Embedding-0.6B-Q8_0.gguf",
-      "sha256": "3e42f708341ab5ff73e9d4e95cfc10b68ed98f0e62b2eea352a37a3b8f3c4f9e",
-      "group": "recommended",
-      "tags": [
-        "qwen",
-        "embedding",
-        "retrieval",
-        "mobile"
-      ],
-      "minRamGb": 4,
-      "devices": [
-        "iphone",
-        "ipad",
-        "mac"
-      ],
-      "description": "Auto-curated embedding model from Hugging Face. Q8_0 GGUF (~0.60 GB) with 32768 context length."
     },
     {
       "id": "unsloth-bge-small-en-v1-5-gguf-f16",
