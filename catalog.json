@@ -1,6 +1,6 @@
 {
-  "version": 7,
-  "updatedAt": "2026-10-07",
+  "version": 8,
+  "updatedAt": "2026-10-08",
   "models": [
     {
       "id": "deepseek-ai-deepseek-r1-0528-qwen3-8b-q4-k-m",
@@ -110,6 +110,26 @@
         "mac"
       ],
       "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~18.5 GB) with 131072 context length."
+    },
+    {
+      "id": "google-gemma-2-27b-it-q4-k-m",
+      "name": "gemma 2 27b it",
+      "family": "gemma",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 16645381632,
+      "contextLength": 8192,
+      "downloadURL": "https://huggingface.co/bartowski/gemma-2-27b-it-GGUF/resolve/main/gemma-2-27b-it-Q4_K_M.gguf",
+      "sha256": "503a87ab47c9e7fb27545ec8592b4dc4493538bd47b397ceb3197e10a0370d23",
+      "group": "advanced",
+      "tags": [
+        "gemma",
+        "powerful"
+      ],
+      "minRamGb": 12,
+      "devices": [
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~15.5 GB) with 8192 context length."
     },
     {
       "id": "google-gemma-2-2b-it-q4-k-m",
@@ -492,29 +512,6 @@
         "mac"
       ],
       "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~8.4 GB) with 131072 context length."
-    },
-    {
-      "id": "qwen-qwen2-5-coder-32b-instruct-q4-k-m",
-      "name": "Qwen2.5 Coder 32B Instruct",
-      "family": "qwen",
-      "quantization": "Q4_K_M",
-      "sizeBytes": 19851335872,
-      "contextLength": 131072,
-      "downloadURL": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct-GGUF/resolve/main/qwen2.5-coder-32b-instruct-q4_k_m.gguf",
-      "sha256": "4d64b316b5e6319d9613e0d97935d9ebd631fc7e334da400d00085eca749d085",
-      "group": "advanced",
-      "tags": [
-        "qwen",
-        "powerful",
-        "coding",
-        "instruct",
-        "long-context"
-      ],
-      "minRamGb": 16,
-      "devices": [
-        "mac"
-      ],
-      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~18.5 GB) with 131072 context length."
     },
     {
       "id": "qwen-qwen2-5-coder-3b-instruct-q4-k-m",

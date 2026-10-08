@@ -1,6 +1,6 @@
 {
-  "version": 33,
-  "updatedAt": "2026-10-07",
+  "version": 34,
+  "updatedAt": "2026-10-08",
   "models": [
     {
       "id": "baai-bge-m3-q8-0",
@@ -73,30 +73,6 @@
         "mac"
       ],
       "description": "Auto-curated embedding model from Hugging Face. Q8_0 GGUF (~0.31 GB) with 2048 context length."
-    },
-    {
-      "id": "google-embeddinggemma-300m-qat-q4-0-unquantized-q4-0",
-      "name": "embeddinggemma 300m qat q4 0 unquantized",
-      "family": "gemma",
-      "quantization": "Q4_0",
-      "sizeBytes": 277852192,
-      "contextLength": 2048,
-      "downloadURL": "https://huggingface.co/ggml-org/embeddinggemma-300M-qat-q4_0-GGUF/resolve/main/embeddinggemma-300M-qat-Q4_0.gguf",
-      "sha256": "50d28e22432a148f6f8a86eab3700f92add5d1f54baf7790675a2a4dadbccf26",
-      "group": "recommended",
-      "tags": [
-        "gemma",
-        "embedding",
-        "retrieval",
-        "mobile"
-      ],
-      "minRamGb": 4,
-      "devices": [
-        "iphone",
-        "ipad",
-        "mac"
-      ],
-      "description": "Auto-curated embedding model from Hugging Face. Q4_0 GGUF (~0.26 GB) with 2048 context length."
     },
     {
       "id": "google-embeddinggemma-300m-qat-q8-0-unquantized-q8-0",
@@ -349,6 +325,30 @@
         "mac"
       ],
       "description": "Auto-curated embedding model from Hugging Face. Q8_0 GGUF (~7.00 GB) with 32768 context length."
+    },
+    {
+      "id": "nomic-ai-nomic-embed-text-v1-5-f16",
+      "name": "nomic embed text v1.5",
+      "family": "nomic",
+      "quantization": "F16",
+      "sizeBytes": 274290560,
+      "contextLength": 2048,
+      "downloadURL": "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5-GGUF/resolve/main/nomic-embed-text-v1.5.f16.gguf",
+      "sha256": "f7af6f66802f4df86eda10fe9bbcfc75c39562bed48ef6ace719a251cf1c2fdb",
+      "group": "recommended",
+      "tags": [
+        "nomic",
+        "embedding",
+        "retrieval",
+        "mobile"
+      ],
+      "minRamGb": 4,
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated embedding model from Hugging Face. F16 GGUF (~0.26 GB) with 2048 context length."
     },
     {
       "id": "nomic-ai-nomic-embed-text-v1-f16",
