@@ -146,6 +146,26 @@ models:
   fileName: nomic-embed-text-v1.f16.gguf
   quantization: F16
   sha256: e17ebde8d22d345aead60b0ed10726e8c45a06f4ba9a45223ab594526542e58f
+- id: ibm-granite-granite-embedding-107m-multilingual-f16
+  name: granite embedding 107m multilingual
+  family: embedding
+  group: recommended
+  tags:
+  - embedding
+  - retrieval
+  - mobile
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated embedding model from Hugging Face. F16 GGUF (~0.21 GB)
+    with 512 context length.
+  contextLength: 512
+  hfRepo: bartowski/granite-embedding-107m-multilingual-GGUF
+  fileName: granite-embedding-107m-multilingual-f16.gguf
+  quantization: F16
+  sha256: 3fc99928632fcecad589c401ec33bbba86b51c457e9813e3a1cb801ff4106e21
 - id: jinaai-jina-embeddings-v5-text-nano-f16
   name: jina embeddings v5 text nano
   family: jina
@@ -167,26 +187,6 @@ models:
   fileName: v5-nano-retrieval-F16.gguf
   quantization: F16
   sha256: 0c09e71f0bbcfceb06c44d56da2fdcee8b14b2e0d72b33e321ee2a7d7b350826
-- id: ibm-granite-granite-embedding-107m-multilingual-f16
-  name: granite embedding 107m multilingual
-  family: embedding
-  group: recommended
-  tags:
-  - embedding
-  - retrieval
-  - mobile
-  minRamGb: 4
-  devices:
-  - iphone
-  - ipad
-  - mac
-  description: Auto-curated embedding model from Hugging Face. F16 GGUF (~0.21 GB)
-    with 512 context length.
-  contextLength: 512
-  hfRepo: bartowski/granite-embedding-107m-multilingual-GGUF
-  fileName: granite-embedding-107m-multilingual-f16.gguf
-  quantization: F16
-  sha256: 3fc99928632fcecad589c401ec33bbba86b51c457e9813e3a1cb801ff4106e21
 - id: qwen-qwen3-0-6b-base-f16
   name: Qwen3 0.6B Base
   family: qwen
@@ -267,26 +267,6 @@ models:
   fileName: jina-embeddings-v5-omni-small-retrieval-F16.gguf
   quantization: F16
   sha256: cddb89cc38388d70792a2c788e2f472c7df7ac1d0c44b6145a02dcb6d0758e24
-- id: jinaai-jina-code-embeddings-0-5b-f16
-  name: jina code embeddings 0.5b
-  family: jina
-  group: advanced
-  tags:
-  - jina
-  - embedding
-  - retrieval
-  - balanced
-  minRamGb: 6
-  devices:
-  - ipad
-  - mac
-  description: Auto-curated embedding model from Hugging Face. F16 GGUF (~0.93 GB)
-    with 32768 context length.
-  contextLength: 32768
-  hfRepo: jinaai/jina-code-embeddings-0.5b-GGUF
-  fileName: jina-code-embeddings-0.5b-F16.gguf
-  quantization: F16
-  sha256: 81f7d569cdd10dab45aef7582b5d2bb12a21b2aa34580b33c5ea3b926b521cfc
 - id: jinaai-jina-embeddings-v5-omni-small-text-matching-f16
   name: jina embeddings v5 omni small text matching
   family: jina
@@ -307,6 +287,26 @@ models:
   fileName: jina-embeddings-v5-omni-small-text-matching-F16.gguf
   quantization: F16
   sha256: 3277e62fe70a260ca7df23abdd6e92db029617db2a9b5006cac8df86c715a578
+- id: jinaai-jina-code-embeddings-0-5b-f16
+  name: jina code embeddings 0.5b
+  family: jina
+  group: advanced
+  tags:
+  - jina
+  - embedding
+  - retrieval
+  - balanced
+  minRamGb: 6
+  devices:
+  - ipad
+  - mac
+  description: Auto-curated embedding model from Hugging Face. F16 GGUF (~0.93 GB)
+    with 32768 context length.
+  contextLength: 32768
+  hfRepo: jinaai/jina-code-embeddings-0.5b-GGUF
+  fileName: jina-code-embeddings-0.5b-F16.gguf
+  quantization: F16
+  sha256: 81f7d569cdd10dab45aef7582b5d2bb12a21b2aa34580b33c5ea3b926b521cfc
 - id: jinaai-jina-embeddings-v3-f16
   name: jina embeddings v3
   family: jina
