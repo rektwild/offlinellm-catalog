@@ -58,27 +58,6 @@ models:
   fileName: qwen2.5-3b-instruct-q4_k_m.gguf
   quantization: Q4_K_M
   sha256: 626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d
-- id: meta-llama-llama-3-2-3b-instruct-q4-k-m
-  name: Llama 3.2 3B Instruct
-  family: llama3
-  group: recommended
-  tags:
-  - llama3
-  - mobile
-  - instruct
-  - long-context
-  minRamGb: 4
-  devices:
-  - iphone
-  - ipad
-  - mac
-  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~1.9 GB) with 131072 context
-    length.
-  contextLength: 131072
-  hfRepo: bartowski/Llama-3.2-3B-Instruct-GGUF
-  fileName: Llama-3.2-3B-Instruct-Q4_K_M.gguf
-  quantization: Q4_K_M
-  sha256: 6c1a2b41161032677be168d354123594c0e6e67d2b9227c84f296ad037c728ff
 - id: qwen-qwen2-5-coder-1-5b-instruct-q4-k-m
   name: Qwen2.5 Coder 1.5B Instruct
   family: qwen
@@ -100,6 +79,27 @@ models:
   fileName: qwen2.5-coder-1.5b-instruct-q4_k_m.gguf
   quantization: Q4_K_M
   sha256: cc324af070c2ecbfd324a30884d2f951a7ff756aba85cb811a6ec436933bb046
+- id: meta-llama-llama-3-2-3b-instruct-q4-k-m
+  name: Llama 3.2 3B Instruct
+  family: llama3
+  group: recommended
+  tags:
+  - llama3
+  - mobile
+  - instruct
+  - long-context
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~1.9 GB) with 131072 context
+    length.
+  contextLength: 131072
+  hfRepo: bartowski/Llama-3.2-3B-Instruct-GGUF
+  fileName: Llama-3.2-3B-Instruct-Q4_K_M.gguf
+  quantization: Q4_K_M
+  sha256: 6c1a2b41161032677be168d354123594c0e6e67d2b9227c84f296ad037c728ff
 - id: qwen-qwen3-1-7b-q4-k-m
   name: Qwen3 1.7B
   family: qwen
