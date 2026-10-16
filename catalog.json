@@ -1,6 +1,6 @@
 {
-  "version": 8,
-  "updatedAt": "2026-10-13",
+  "version": 9,
+  "updatedAt": "2026-10-16",
   "models": [
     {
       "id": "deepseek-ai-deepseek-r1-0528-qwen3-8b-q4-k-m",
@@ -154,27 +154,6 @@
       "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~1.6 GB) with 8192 context length."
     },
     {
-      "id": "google-gemma-2-9b-it-q4-k-m",
-      "name": "gemma 2 9b it",
-      "family": "gemma",
-      "quantization": "Q4_K_M",
-      "sizeBytes": 6843425696,
-      "contextLength": 8192,
-      "downloadURL": "https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q4_K_M-fp16.gguf",
-      "sha256": "0452e54ba9b6c5b2e466fbd7f28c089fefb7c3dceddcc2b75becab6b16cae523",
-      "group": "advanced",
-      "tags": [
-        "gemma",
-        "balanced"
-      ],
-      "minRamGb": 8,
-      "devices": [
-        "ipad",
-        "mac"
-      ],
-      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~6.4 GB) with 8192 context length."
-    },
-    {
       "id": "google-gemma-3-1b-it-q4-k-m",
       "name": "gemma 3 1b it",
       "family": "gemma",
@@ -195,6 +174,28 @@
         "mac"
       ],
       "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~0.8 GB) with 32768 context length."
+    },
+    {
+      "id": "liquidai-lfm2-5-8b-a1b-q4-k-m",
+      "name": "LFM2.5 8B A1B",
+      "family": "general",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 5155564768,
+      "contextLength": 128000,
+      "downloadURL": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF/resolve/main/LFM2.5-8B-A1B-Q4_K_M.gguf",
+      "sha256": "4923ec14f06b968b74d663e5949867d2d9c3bf13a20b8be1a9f9af39989b2bb0",
+      "group": "advanced",
+      "tags": [
+        "general",
+        "balanced",
+        "long-context"
+      ],
+      "minRamGb": 8,
+      "devices": [
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~4.8 GB) with 128000 context length."
     },
     {
       "id": "meta-llama-llama-3-2-1b-instruct-q4-k-m",
