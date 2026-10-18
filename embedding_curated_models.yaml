@@ -41,27 +41,6 @@ models:
   fileName: embeddinggemma-300M-Q8_0.gguf
   quantization: Q8_0
   sha256: b5ce9d77a3fc4b3b39ccb5643c36777911cc4eb46a66962eadfa3f5f60490d63
-- id: google-embeddinggemma-2-f16
-  name: embeddinggemma 2
-  family: gemma
-  group: recommended
-  tags:
-  - gemma
-  - embedding
-  - retrieval
-  - mobile
-  minRamGb: 4
-  devices:
-  - iphone
-  - ipad
-  - mac
-  description: Auto-curated embedding model from Hugging Face. F16 GGUF (~0.52 GB)
-    with 262144 context length.
-  contextLength: 262144
-  hfRepo: unsloth/embeddinggemma-2-GGUF
-  fileName: embeddinggemma-2-F16.gguf
-  quantization: F16
-  sha256: 0d4350867eddbb94af485501a3d07e9374c47779d88f8a39cd1abd6a8e2d0901
 - id: unsloth-bge-small-en-v1-5-gguf-f16
   name: bge small en v1.5 GGUF
   family: bge
@@ -83,6 +62,27 @@ models:
   fileName: bge-small-en-v1.5-f16.gguf
   quantization: F16
   sha256: c5d2302edc429f679642433b9f96dd217799727a06e675abef3b40a79f5e1589
+- id: google-embeddinggemma-2-f16
+  name: embeddinggemma 2
+  family: gemma
+  group: recommended
+  tags:
+  - gemma
+  - embedding
+  - retrieval
+  - mobile
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated embedding model from Hugging Face. F16 GGUF (~0.52 GB)
+    with 262144 context length.
+  contextLength: 262144
+  hfRepo: unsloth/embeddinggemma-2-GGUF
+  fileName: embeddinggemma-2-F16.gguf
+  quantization: F16
+  sha256: 0d4350867eddbb94af485501a3d07e9374c47779d88f8a39cd1abd6a8e2d0901
 - id: google-embeddinggemma-300m-qat-q8-0-unquantized-q8-0
   name: embeddinggemma 300m qat q8 0 unquantized
   family: gemma
