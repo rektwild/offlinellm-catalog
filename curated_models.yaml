@@ -318,25 +318,6 @@ models:
   fileName: LFM2.5-8B-A1B-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: 4923ec14f06b968b74d663e5949867d2d9c3bf13a20b8be1a9f9af39989b2bb0
-- id: qwen-qwen2-5-7b-instruct-q4-k-m
-  name: Qwen2.5 7B Instruct
-  family: qwen
-  group: advanced
-  tags:
-  - qwen
-  - balanced
-  - instruct
-  minRamGb: 6
-  devices:
-  - ipad
-  - mac
-  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~4.4 GB) with 32768 context
-    length.
-  contextLength: 32768
-  hfRepo: bartowski/Qwen2.5-7B-Instruct-GGUF
-  fileName: Qwen2.5-7B-Instruct-Q4_K_M.gguf
-  quantization: Q4_K_M
-  sha256: 65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423
 - id: deepseek-ai-deepseek-r1-0528-qwen3-8b-q4-k-m
   name: DeepSeek R1 0528 Qwen3 8B
   family: qwen
@@ -356,6 +337,25 @@ models:
   fileName: DeepSeek-R1-0528-Qwen3-8B-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: a86349a4180c4e6bb43f874c29c404fa2be3f90b15509bd6d86f697dba724ec1
+- id: qwen-qwen2-5-7b-instruct-q4-k-m
+  name: Qwen2.5 7B Instruct
+  family: qwen
+  group: advanced
+  tags:
+  - qwen
+  - balanced
+  - instruct
+  minRamGb: 6
+  devices:
+  - ipad
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~4.4 GB) with 32768 context
+    length.
+  contextLength: 32768
+  hfRepo: bartowski/Qwen2.5-7B-Instruct-GGUF
+  fileName: Qwen2.5-7B-Instruct-Q4_K_M.gguf
+  quantization: Q4_K_M
+  sha256: 65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423
 - id: mistralai-mistral-7b-instruct-v0-3-q4-k-m
   name: Mistral 7B Instruct v0.3
   family: mistral
