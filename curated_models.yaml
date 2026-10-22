@@ -356,6 +356,25 @@ models:
   fileName: LFM2.5-8B-A1B-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: 4923ec14f06b968b74d663e5949867d2d9c3bf13a20b8be1a9f9af39989b2bb0
+- id: deepseek-ai-deepseek-r1-distill-llama-8b-q4-k-m
+  name: DeepSeek R1 Distill Llama 8B
+  family: llama3
+  group: advanced
+  tags:
+  - llama3
+  - balanced
+  - long-context
+  minRamGb: 8
+  devices:
+  - ipad
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~4.6 GB) with 131072 context
+    length.
+  contextLength: 131072
+  hfRepo: unsloth/DeepSeek-R1-Distill-Llama-8B-GGUF
+  fileName: DeepSeek-R1-Distill-Llama-8B-Q4_K_M.gguf
+  quantization: Q4_K_M
+  sha256: 0addb1339a82385bcd973186cd80d18dcc71885d45eabd899781a118d03827d9
 - id: mistralai-mistral-7b-instruct-v0-3-q4-k-m
   name: Mistral 7B Instruct v0.3
   family: mistral
@@ -394,25 +413,6 @@ models:
   fileName: Meta-Llama-3-8B-Instruct.Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: 4903067381e3753e2629f9d20c52df0e43b675bed2735bc3efea351c7d07454d
-- id: deepseek-ai-deepseek-r1-distill-llama-8b-q4-k-m
-  name: DeepSeek R1 Distill Llama 8B
-  family: llama3
-  group: advanced
-  tags:
-  - llama3
-  - balanced
-  - long-context
-  minRamGb: 8
-  devices:
-  - ipad
-  - mac
-  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~4.6 GB) with 131072 context
-    length.
-  contextLength: 131072
-  hfRepo: unsloth/DeepSeek-R1-Distill-Llama-8B-GGUF
-  fileName: DeepSeek-R1-Distill-Llama-8B-Q4_K_M.gguf
-  quantization: Q4_K_M
-  sha256: 0addb1339a82385bcd973186cd80d18dcc71885d45eabd899781a118d03827d9
 - id: qwen-qwen3-coder-30b-a3b-instruct-q4-k-m
   name: Qwen3 Coder 30B A3B Instruct
   family: qwen
