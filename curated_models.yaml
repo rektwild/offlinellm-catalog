@@ -200,6 +200,25 @@ models:
   fileName: gemma-2-2b-it-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: e0aee85060f168f0f2d8473d7ea41ce2f3230c1bc1374847505ea599288a7787
+- id: google-gemma-3-1b-it-q4-k-m
+  name: gemma 3 1b it
+  family: gemma
+  group: recommended
+  tags:
+  - gemma
+  - mobile
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~0.8 GB) with 32768 context
+    length.
+  contextLength: 32768
+  hfRepo: unsloth/gemma-3-1b-it-GGUF
+  fileName: gemma-3-1b-it-Q4_K_M.gguf
+  quantization: Q4_K_M
+  sha256: 8270790f3ab69fdfe860b7b64008d9a19986d8df7e407bb018184caa08798ebd
 - id: microsoft-phi-3-5-mini-instruct-q4-k-m
   name: Phi 3.5 mini instruct
   family: phi3
@@ -221,25 +240,6 @@ models:
   fileName: Phi-3.5-mini-instruct.Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: 3f68916e850b107d8641d18bcd5548f0d66beef9e0a9077fe84ef28943eb7e88
-- id: google-gemma-3-1b-it-q4-k-m
-  name: gemma 3 1b it
-  family: gemma
-  group: recommended
-  tags:
-  - gemma
-  - mobile
-  minRamGb: 4
-  devices:
-  - iphone
-  - ipad
-  - mac
-  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~0.8 GB) with 32768 context
-    length.
-  contextLength: 32768
-  hfRepo: unsloth/gemma-3-1b-it-GGUF
-  fileName: gemma-3-1b-it-Q4_K_M.gguf
-  quantization: Q4_K_M
-  sha256: 8270790f3ab69fdfe860b7b64008d9a19986d8df7e407bb018184caa08798ebd
 - id: qwen-qwen3-8b-q4-k-m
   name: Qwen3 8B
   family: qwen
