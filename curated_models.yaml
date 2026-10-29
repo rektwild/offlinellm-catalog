@@ -504,6 +504,24 @@ models:
   fileName: Qwen-AgentWorld-35B-A3B-UD-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: e7a8eafdd8013443b6bcc4b6fb47b2d2025f772d359650b9ceb7d75971e22cad
+- id: liquidai-lfm2-5-24b-a2b-q4-k-m
+  name: LFM2.5 24B A2B
+  family: general
+  group: advanced
+  tags:
+  - general
+  - powerful
+  - long-context
+  minRamGb: 12
+  devices:
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~13.5 GB) with 131072
+    context length.
+  contextLength: 131072
+  hfRepo: LiquidAI/LFM2.5-24B-A2B-GGUF
+  fileName: LFM2.5-24B-A2B-Q4_K_M.gguf
+  quantization: Q4_K_M
+  sha256: d3334405b96228eb9908cdebb5c6194908f2da64282bda852afc3a3910c64e7d
 - id: qwen-qwen2-5-coder-14b-instruct-q4-k-m
   name: Qwen2.5 Coder 14B Instruct
   family: qwen
@@ -560,20 +578,3 @@ models:
   fileName: DeepSeek-R1-Distill-Qwen-14B-Q4_K_M.gguf
   quantization: Q4_K_M
   sha256: 0b319bd0572f2730bfe11cc751defe82045fad5085b4e60591ac2cd2d9633181
-- id: google-gemma-2-27b-it-q4-k-m
-  name: gemma 2 27b it
-  family: gemma
-  group: advanced
-  tags:
-  - gemma
-  - powerful
-  minRamGb: 12
-  devices:
-  - mac
-  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~15.5 GB) with 8192 context
-    length.
-  contextLength: 8192
-  hfRepo: bartowski/gemma-2-27b-it-GGUF
-  fileName: gemma-2-27b-it-Q4_K_M.gguf
-  quantization: Q4_K_M
-  sha256: 503a87ab47c9e7fb27545ec8592b4dc4493538bd47b397ceb3197e10a0370d23
