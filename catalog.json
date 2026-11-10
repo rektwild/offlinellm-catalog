@@ -1,6 +1,6 @@
 {
-  "version": 10,
-  "updatedAt": "2026-11-09",
+  "version": 11,
+  "updatedAt": "2026-11-10",
   "models": [
     {
       "id": "deepseek-ai-deepseek-r1-0528-qwen3-8b-q4-k-m",
@@ -112,6 +112,28 @@
       "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~18.5 GB) with 131072 context length."
     },
     {
+      "id": "deepseek-ai-deepseek-r1-distill-qwen-7b-q4-k-m",
+      "name": "DeepSeek R1 Distill Qwen 7B",
+      "family": "qwen",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 4683073504,
+      "contextLength": 131072,
+      "downloadURL": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-7B-GGUF/resolve/main/DeepSeek-R1-Distill-Qwen-7B-Q4_K_M.gguf",
+      "sha256": "731ece8d06dc7eda6f6572997feb9ee1258db0784827e642909d9b565641937b",
+      "group": "advanced",
+      "tags": [
+        "qwen",
+        "balanced",
+        "long-context"
+      ],
+      "minRamGb": 6,
+      "devices": [
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~4.4 GB) with 131072 context length."
+    },
+    {
       "id": "google-gemma-2-2b-it-q4-k-m",
       "name": "gemma 2 2b it",
       "family": "gemma",
@@ -197,6 +219,29 @@
         "mac"
       ],
       "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~4.8 GB) with 128000 context length."
+    },
+    {
+      "id": "liquidai-lfm3-1-7b-q4-k-m",
+      "name": "LFM3 1.7B",
+      "family": "general",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 1099627808,
+      "contextLength": 262144,
+      "downloadURL": "https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF/resolve/main/LFM3-1.7B-Q4_K_M.gguf",
+      "sha256": "3793e1e6e2266919d6e015287221b41100175a98eddaba92e111aed3b05c93c4",
+      "group": "recommended",
+      "tags": [
+        "general",
+        "mobile",
+        "long-context"
+      ],
+      "minRamGb": 4,
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac"
+      ],
+      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~1.0 GB) with 262144 context length."
     },
     {
       "id": "meta-llama-llama-3-2-1b-instruct-q4-k-m",
@@ -290,52 +335,6 @@
         "mac"
       ],
       "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~4.6 GB) with 8192 context length."
-    },
-    {
-      "id": "microsoft-phi-3-5-mini-instruct-q4-k-m",
-      "name": "Phi 3.5 mini instruct",
-      "family": "phi3",
-      "quantization": "Q4_K_M",
-      "sizeBytes": 2393232608,
-      "contextLength": 131072,
-      "downloadURL": "https://huggingface.co/MaziyarPanahi/Phi-3.5-mini-instruct-GGUF/resolve/main/Phi-3.5-mini-instruct.Q4_K_M.gguf",
-      "sha256": "3f68916e850b107d8641d18bcd5548f0d66beef9e0a9077fe84ef28943eb7e88",
-      "group": "recommended",
-      "tags": [
-        "phi3",
-        "mobile",
-        "instruct",
-        "long-context"
-      ],
-      "minRamGb": 4,
-      "devices": [
-        "iphone",
-        "ipad",
-        "mac"
-      ],
-      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~2.2 GB) with 131072 context length."
-    },
-    {
-      "id": "mistralai-mistral-7b-instruct-v0-3-q4-k-m",
-      "name": "Mistral 7B Instruct v0.3",
-      "family": "mistral",
-      "quantization": "Q4_K_M",
-      "sizeBytes": 4372811936,
-      "contextLength": 32768,
-      "downloadURL": "https://huggingface.co/MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF/resolve/main/Mistral-7B-Instruct-v0.3.Q4_K_M.gguf",
-      "sha256": "14850c84ff9f06e9b51d505d64815d5cc0cea0257380353ac0b3d21b21f6e024",
-      "group": "advanced",
-      "tags": [
-        "mistral",
-        "balanced",
-        "instruct"
-      ],
-      "minRamGb": 6,
-      "devices": [
-        "ipad",
-        "mac"
-      ],
-      "description": "Auto-curated from Hugging Face. Q4_K_M GGUF (~4.1 GB) with 32768 context length."
     },
     {
       "id": "openai-gpt-oss-20b-q4-k-m",
