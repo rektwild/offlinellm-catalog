@@ -38,26 +38,6 @@ models:
   fileName: qwen2.5-1.5b-instruct-q4_k_m.gguf
   quantization: Q4_K_M
   sha256: 6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e
-- id: liquidai-lfm3-1-7b-q4-k-m
-  name: LFM3 1.7B
-  family: general
-  group: recommended
-  tags:
-  - general
-  - mobile
-  - long-context
-  minRamGb: 4
-  devices:
-  - iphone
-  - ipad
-  - mac
-  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~1.0 GB) with 262144 context
-    length.
-  contextLength: 262144
-  hfRepo: LiquidAI/LFM3-1.7B-GGUF
-  fileName: LFM3-1.7B-Q4_K_M.gguf
-  quantization: Q4_K_M
-  sha256: 3793e1e6e2266919d6e015287221b41100175a98eddaba92e111aed3b05c93c4
 - id: qwen-qwen2-5-3b-instruct-q4-k-m
   name: Qwen2.5 3B Instruct
   family: qwen
@@ -78,6 +58,26 @@ models:
   fileName: qwen2.5-3b-instruct-q4_k_m.gguf
   quantization: Q4_K_M
   sha256: 626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d
+- id: liquidai-lfm3-1-7b-q4-k-m
+  name: LFM3 1.7B
+  family: general
+  group: recommended
+  tags:
+  - general
+  - mobile
+  - long-context
+  minRamGb: 4
+  devices:
+  - iphone
+  - ipad
+  - mac
+  description: Auto-curated from Hugging Face. Q4_K_M GGUF (~1.0 GB) with 262144 context
+    length.
+  contextLength: 262144
+  hfRepo: LiquidAI/LFM3-1.7B-GGUF
+  fileName: LFM3-1.7B-Q4_K_M.gguf
+  quantization: Q4_K_M
+  sha256: 3793e1e6e2266919d6e015287221b41100175a98eddaba92e111aed3b05c93c4
 - id: meta-llama-llama-3-2-3b-instruct-q4-k-m
   name: Llama 3.2 3B Instruct
   family: llama3
